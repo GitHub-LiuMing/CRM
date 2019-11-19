@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liuming.crm.mapper.customerStatusMapper.CustomerStatusMapper" >
+  <resultMap id="Map" type="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
+    <id column="customer_status_id" property="customerStatusId" jdbcType="VARCHAR" />
+    <result column="customer_status_name" property="customerStatusName" jdbcType="INTEGER" />
+    <result column="customer_status_status" property="customerStatusStatus" jdbcType="INTEGER" />
+    <result column="customer_status_created_date" property="customerStatusCreatedDate" jdbcType="TIMESTAMP" />
+    <result column="customer_status_updated_date" property="customerStatusUpdatedDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    customer_status_id, customer_status_name, customer_status_status, customer_status_created_date, 
+    customer_status_updated_date
+  </sql>
+  <select id="selectByExample" resultMap="Map" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatusExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from customer_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="Map" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from customer_status
+    where customer_status_id = #{customerStatusId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from customer_status
+    where customer_status_id = #{customerStatusId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatusExample" >
+    delete from customer_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
+    insert into customer_status (customer_status_id, customer_status_name, 
+      customer_status_status, customer_status_created_date, 
+      customer_status_updated_date)
+    values (#{customerStatusId,jdbcType=VARCHAR}, #{customerStatusName,jdbcType=INTEGER}, 
+      #{customerStatusStatus,jdbcType=INTEGER}, #{customerStatusCreatedDate,jdbcType=TIMESTAMP}, 
+      #{customerStatusUpdatedDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
+    insert into customer_status
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="customerStatusId != null" >
+        customer_status_id,
+      </if>
+      <if test="customerStatusName != null" >
+        customer_status_name,
+      </if>
+      <if test="customerStatusStatus != null" >
+        customer_status_status,
+      </if>
+      <if test="customerStatusCreatedDate != null" >
+        customer_status_created_date,
+      </if>
+      <if test="customerStatusUpdatedDate != null" >
+        customer_status_updated_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="customerStatusId != null" >
+        #{customerStatusId,jdbcType=VARCHAR},
+      </if>
+      <if test="customerStatusName != null" >
+        #{customerStatusName,jdbcType=INTEGER},
+      </if>
+      <if test="customerStatusStatus != null" >
+        #{customerStatusStatus,jdbcType=INTEGER},
+      </if>
+      <if test="customerStatusCreatedDate != null" >
+        #{customerStatusCreatedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerStatusUpdatedDate != null" >
+        #{customerStatusUpdatedDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatusExample" resultType="java.lang.Integer" >
+    select count(*) from customer_status
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update customer_status
+    <set >
+      <if test="record.customerStatusId != null" >
+        customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.customerStatusName != null" >
+        customer_status_name = #{record.customerStatusName,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerStatusStatus != null" >
+        customer_status_status = #{record.customerStatusStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerStatusCreatedDate != null" >
+        customer_status_created_date = #{record.customerStatusCreatedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.customerStatusUpdatedDate != null" >
+        customer_status_updated_date = #{record.customerStatusUpdatedDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update customer_status
+    set customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
+      customer_status_name = #{record.customerStatusName,jdbcType=INTEGER},
+      customer_status_status = #{record.customerStatusStatus,jdbcType=INTEGER},
+      customer_status_created_date = #{record.customerStatusCreatedDate,jdbcType=TIMESTAMP},
+      customer_status_updated_date = #{record.customerStatusUpdatedDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
+    update customer_status
+    <set >
+      <if test="customerStatusName != null" >
+        customer_status_name = #{customerStatusName,jdbcType=INTEGER},
+      </if>
+      <if test="customerStatusStatus != null" >
+        customer_status_status = #{customerStatusStatus,jdbcType=INTEGER},
+      </if>
+      <if test="customerStatusCreatedDate != null" >
+        customer_status_created_date = #{customerStatusCreatedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerStatusUpdatedDate != null" >
+        customer_status_updated_date = #{customerStatusUpdatedDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where customer_status_id = #{customerStatusId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
+    update customer_status
+    set customer_status_name = #{customerStatusName,jdbcType=INTEGER},
+      customer_status_status = #{customerStatusStatus,jdbcType=INTEGER},
+      customer_status_created_date = #{customerStatusCreatedDate,jdbcType=TIMESTAMP},
+      customer_status_updated_date = #{customerStatusUpdatedDate,jdbcType=TIMESTAMP}
+    where customer_status_id = #{customerStatusId,jdbcType=VARCHAR}
+  </update>
+  <select id="findCustomerStatusByName" parameterType="java.lang.Integer" resultMap="Map">
+    SELECT
+        *
+    FROM
+        customer_status
+    WHERE
+        customer_status_name = #{customerStatusName}
+        AND customer_status_status = '1';
+  </select>
+  <update id="delCustomerStatus" parameterType="java.lang.String">
+    UPDATE customer_status
+    SET customer_status_status = '0'
+    WHERE
+        customer_status_id = #{customerStatusId}
+  </update>
+  <select id="findCustomerStatus" resultMap="Map">
+    SELECT
+        *
+    FROM
+        customer_status
+    WHERE
+        customer_status_status = '1'
+    ORDER BY
+	    customer_status_created_date ASC
+  </select>
+</mapper>
