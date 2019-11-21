@@ -7,4 +7,6 @@ public interface WorkReportService {
     DataResult addWorkReport(WorkReportWithBLOBs workReportWithBLOBs);
 
     DataResult findWorkReport(String workReportUserId);
+
+    DataResult addReviews(WorkReportWithBLOBs workReportWithBLOBs);
 }

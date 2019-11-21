@@ -1,7 +1,10 @@
 package com.liuming.crm.service.customerService.impl;
 
+import com.liuming.crm.mapper.customerMapper.CustomerMapper;
 import com.liuming.crm.service.customerService.CustomerService;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @Description
@@ -11,4 +14,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CustomerServiceImpl implements CustomerService {
+    @Resource
+    private CustomerMapper customerMapper;
 }

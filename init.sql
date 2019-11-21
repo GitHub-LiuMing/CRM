@@ -51,6 +51,7 @@ CREATE TABLE `district` (
   KEY `Index_1` (`DISTRICT_CODE`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3679 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='地区';
 
+--用户
 CREATE TABLE `user` (
   `user_id` varchar(32) NOT NULL COMMENT '用户ID',
   `user_name` varchar(255) NOT NULL COMMENT '姓名',
@@ -62,6 +63,27 @@ CREATE TABLE `user` (
   `user_update_date` datetime NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户';
+
+--客户
+CREATE TABLE `customer` (
+	`customer_id` VARCHAR ( 32 ) NOT NULL COMMENT '客户ID',
+	`customer_name` VARCHAR ( 255 ) NOT NULL COMMENT '客户名称',
+	`customer_status_id` VARCHAR ( 32 ) NOT NULL COMMENT '客户状态ID',
+	`customer_status_name` VARCHAR ( 255 ) DEFAULT NULL COMMENT '客户状态名称',
+	`user_id` VARCHAR ( 32 ) NOT NULL COMMENT '用户ID',
+	`user_name` VARCHAR ( 255 ) NOT NULL COMMENT '用户名称',
+	`last_follow_up_date` date DEFAULT NULL COMMENT '上次跟进时间',
+	`province_code` VARCHAR ( 40 ) DEFAULT NULL COMMENT '省份ID',
+	`province_short_name` VARCHAR ( 20 ) DEFAULT NULL COMMENT '省份简称',
+	`city_code` VARCHAR ( 40 ) DEFAULT NULL COMMENT '城市ID',
+	`city_short_name` VARCHAR ( 20 ) DEFAULT NULL COMMENT '城市简称',
+	`district_code` VARCHAR ( 40 ) DEFAULT NULL COMMENT '地区ID',
+	`district_short_name` VARCHAR ( 20 ) DEFAULT NULL COMMENT '地区简称',
+	`customer_public_area_status` INT ( 1 ) DEFAULT '1' COMMENT '客户公海状态 0-未分配 1-已分配',
+	`customer_created_date` datetime DEFAULT NULL COMMENT '创建时间',
+	`customer_updated_date` datetime DEFAULT NULL COMMENT '修改时间',
+PRIMARY KEY ( `customer_id` ) USING BTREE
+) ENGINE = INNODB DEFAULT CHARSET = utf8mb4 ROW_FORMAT = COMPACT COMMENT = '客户';
 
 --客户状态
 CREATE TABLE `customer_status` (
@@ -90,19 +112,20 @@ PRIMARY KEY ( `work_report_id` ) USING BTREE
 
 --跟进记录
 CREATE TABLE `follow_up_record` (
-  `follow_up_record_id` varchar(32) NOT NULL COMMENT '跟进记录ID',
-	`user_id` varchar(32) NOT NULL COMMENT '用户',
-	`user_name` varchar(255) NOT NULL COMMENT '姓名',
-	`customer_id` varchar(32) NOT NULL COMMENT '客户ID',
-	`customer_name` varchar(255) NOT NULL COMMENT '客户名称',
+	`follow_up_record_id` VARCHAR ( 32 ) NOT NULL COMMENT '跟进记录ID',
+	`user_id` VARCHAR ( 32 ) NOT NULL COMMENT '用户',
+	`user_name` VARCHAR ( 255 ) NOT NULL COMMENT '姓名',
+	`customer_id` VARCHAR ( 32 ) NOT NULL COMMENT '客户ID',
+	`customer_name` VARCHAR ( 255 ) NOT NULL COMMENT '客户名称',
 	`follow_up_date` date NOT NULL COMMENT '跟进时间',
-	`follow_up_theme` varchar(255) NOT NULL COMMENT '跟进主题',
-	`follow_up_content` mediumtext NOT NULL COMMENT '跟进内容',
+	`follow_up_theme` VARCHAR ( 255 ) NOT NULL COMMENT '跟进主题',
+	`follow_up_content` MEDIUMTEXT NOT NULL COMMENT '跟进内容',
 	`next_remind_date` date NOT NULL COMMENT '下次提醒时间',
-	`next_follow_up_content` mediumtext NOT NULL COMMENT '下次跟进内容',
-  `follow_up_record_type` int(1) DEFAULT NULL COMMENT '跟进类型 0-电话 1-微信 2-阿里旺旺',
-  `follow_up_record_status` int(1) NOT NULL DEFAULT '1' COMMENT '状态 0-禁用 1-正常',
-  `follow_up_record_create_date` datetime NOT NULL COMMENT '创建时间',
-  `follow_up_record_update_date` datetime NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`follow_up_record_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='跟进记录';
+	`next_follow_up_theme` VARCHAR ( 255 ) NOT NULL COMMENT '下次跟进主题',
+	`next_follow_up_content` MEDIUMTEXT NOT NULL COMMENT '下次跟进内容',
+	`follow_up_record_type` INT ( 1 ) NOT NULL COMMENT '跟进类型 0-电话 1-微信 2-阿里旺旺',
+	`follow_up_record_status` INT ( 1 ) NOT NULL DEFAULT '1' COMMENT '状态 0-禁用 1-正常',
+	`follow_up_record_create_date` datetime NOT NULL COMMENT '创建时间',
+	`follow_up_record_update_date` datetime NOT NULL COMMENT '更新时间',
+PRIMARY KEY ( `follow_up_record_id` ) USING BTREE
+) ENGINE = INNODB DEFAULT CHARSET = utf8 ROW_FORMAT = COMPACT COMMENT = '跟进记录';

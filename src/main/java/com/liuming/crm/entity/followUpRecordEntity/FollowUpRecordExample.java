@@ -672,6 +672,76 @@ public class FollowUpRecordExample {
             return (Criteria) this;
         }
 
+        public Criteria andNextFollowUpThemeIsNull() {
+            addCriterion("next_follow_up_theme is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeIsNotNull() {
+            addCriterion("next_follow_up_theme is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeEqualTo(String value) {
+            addCriterion("next_follow_up_theme =", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeNotEqualTo(String value) {
+            addCriterion("next_follow_up_theme <>", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeGreaterThan(String value) {
+            addCriterion("next_follow_up_theme >", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeGreaterThanOrEqualTo(String value) {
+            addCriterion("next_follow_up_theme >=", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeLessThan(String value) {
+            addCriterion("next_follow_up_theme <", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeLessThanOrEqualTo(String value) {
+            addCriterion("next_follow_up_theme <=", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeLike(String value) {
+            addCriterion("next_follow_up_theme like", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeNotLike(String value) {
+            addCriterion("next_follow_up_theme not like", value, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeIn(List<String> values) {
+            addCriterion("next_follow_up_theme in", values, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeNotIn(List<String> values) {
+            addCriterion("next_follow_up_theme not in", values, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeBetween(String value1, String value2) {
+            addCriterion("next_follow_up_theme between", value1, value2, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
+        public Criteria andNextFollowUpThemeNotBetween(String value1, String value2) {
+            addCriterion("next_follow_up_theme not between", value1, value2, "nextFollowUpTheme");
+            return (Criteria) this;
+        }
+
         public Criteria andFollowUpRecordTypeIsNull() {
             addCriterion("follow_up_record_type is null");
             return (Criteria) this;

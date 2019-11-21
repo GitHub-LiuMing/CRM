@@ -4,8 +4,11 @@ import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecord;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordExample;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface FollowUpRecordMapper {
     int countByExample(FollowUpRecordExample example);
 
@@ -34,4 +37,6 @@ public interface FollowUpRecordMapper {
     int updateByPrimaryKeyWithBLOBs(FollowUpRecordWithBLOBs record);
 
     int updateByPrimaryKey(FollowUpRecord record);
+
+    List<FollowUpRecordWithBLOBs> findFollowUpRecordByUserId(@Param("userId") String userId);
 }

@@ -52,4 +52,15 @@ public class WorkReportServiceImpl implements WorkReportService {
         List<WorkReport> workReportList = workReportMapper.findWorkReportByUserId(workReportUserId);
         return DataResult.ok(workReportList);
     }
+
+    @Override
+    public DataResult addReviews(WorkReportWithBLOBs workReportWithBLOBs) {
+        workReportWithBLOBs.setWorkReportUpdatedDate(new Date());
+        int i = workReportMapper.updateByPrimaryKeySelective(workReportWithBLOBs);
+        if (i > 0) {
+            return DataResult.build(200,"点评成功");
+        } else {
+            return DataResult.build(500,"点评失败");
+        }
+    }
 }

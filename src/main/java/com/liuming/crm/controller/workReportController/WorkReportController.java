@@ -54,5 +54,19 @@ public class WorkReportController {
         }
     }
 
-    // TODO: 2019/11/20 后续增加点评功能
+    /**
+     * @Description 新增点评（如果多次调用该接口会覆盖掉原有的点评）
+     * @param workReportWithBLOBs
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.21 10:30
+     */
+    @RequestMapping("/addReviews")
+    public DataResult addReviews(WorkReportWithBLOBs workReportWithBLOBs){
+        if (StringUtils.isNotBlank(workReportWithBLOBs.getWorkReportId()) && StringUtils.isNotBlank(workReportWithBLOBs.getReviewsUserId()) && StringUtils.isNotBlank(workReportWithBLOBs.getReviewsUserName()) && StringUtils.isNotBlank(workReportWithBLOBs.getReviews())) {
+            return workReportService.addReviews(workReportWithBLOBs);
+        } else {
+            return DataResult.build(500,"工作报告ID、点评用户ID、点评用户名称、工作报告点评不得为空");
+        }
+    }
 }

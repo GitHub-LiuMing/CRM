@@ -1,7 +1,10 @@
 package com.liuming.crm.controller.customerController;
 
+import com.liuming.crm.service.customerService.CustomerService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @Descripti 客户
@@ -12,4 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
+    @Resource
+    private CustomerService customerService;
 }

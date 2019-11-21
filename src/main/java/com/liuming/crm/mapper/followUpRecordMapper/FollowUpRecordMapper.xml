@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.liuming.crm.mapper.followUpRecordMapper.FollowUpRecordMapper" >
-  <resultMap id="BaseResultMap" type="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecord" >
+  <resultMap id="Map" type="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecord" >
     <id column="follow_up_record_id" property="followUpRecordId" jdbcType="VARCHAR" />
     <result column="user_id" property="userId" jdbcType="VARCHAR" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
@@ -10,12 +10,13 @@
     <result column="follow_up_date" property="followUpDate" jdbcType="DATE" />
     <result column="follow_up_theme" property="followUpTheme" jdbcType="VARCHAR" />
     <result column="next_remind_date" property="nextRemindDate" jdbcType="DATE" />
+    <result column="next_follow_up_theme" property="nextFollowUpTheme" jdbcType="VARCHAR" />
     <result column="follow_up_record_type" property="followUpRecordType" jdbcType="INTEGER" />
     <result column="follow_up_record_status" property="followUpRecordStatus" jdbcType="INTEGER" />
     <result column="follow_up_record_create_date" property="followUpRecordCreateDate" jdbcType="TIMESTAMP" />
     <result column="follow_up_record_update_date" property="followUpRecordUpdateDate" jdbcType="TIMESTAMP" />
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs" extends="BaseResultMap" >
+  <resultMap id="ResultMapWithBLOBs" type="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs" extends="Map" >
     <result column="follow_up_content" property="followUpContent" jdbcType="LONGVARCHAR" />
     <result column="next_follow_up_content" property="nextFollowUpContent" jdbcType="LONGVARCHAR" />
   </resultMap>
@@ -79,7 +80,7 @@
   </sql>
   <sql id="Base_Column_List" >
     follow_up_record_id, user_id, user_name, customer_id, customer_name, follow_up_date, 
-    follow_up_theme, next_remind_date, follow_up_record_type, follow_up_record_status, 
+    follow_up_theme, next_remind_date, next_follow_up_theme, follow_up_record_type, follow_up_record_status, 
     follow_up_record_create_date, follow_up_record_update_date
   </sql>
   <sql id="Blob_Column_List" >
@@ -101,7 +102,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordExample" >
+  <select id="selectByExample" resultMap="Map" parameterType="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordExample" >
     select
     <if test="distinct" >
       distinct
@@ -136,16 +137,18 @@
   <insert id="insert" parameterType="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs" >
     insert into follow_up_record (follow_up_record_id, user_id, user_name, 
       customer_id, customer_name, follow_up_date, 
-      follow_up_theme, next_remind_date, follow_up_record_type, 
-      follow_up_record_status, follow_up_record_create_date, 
-      follow_up_record_update_date, follow_up_content, 
-      next_follow_up_content)
+      follow_up_theme, next_remind_date, next_follow_up_theme, 
+      follow_up_record_type, follow_up_record_status, 
+      follow_up_record_create_date, follow_up_record_update_date, 
+      follow_up_content, next_follow_up_content
+      )
     values (#{followUpRecordId,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
       #{customerId,jdbcType=VARCHAR}, #{customerName,jdbcType=VARCHAR}, #{followUpDate,jdbcType=DATE}, 
-      #{followUpTheme,jdbcType=VARCHAR}, #{nextRemindDate,jdbcType=DATE}, #{followUpRecordType,jdbcType=INTEGER}, 
-      #{followUpRecordStatus,jdbcType=INTEGER}, #{followUpRecordCreateDate,jdbcType=TIMESTAMP}, 
-      #{followUpRecordUpdateDate,jdbcType=TIMESTAMP}, #{followUpContent,jdbcType=LONGVARCHAR}, 
-      #{nextFollowUpContent,jdbcType=LONGVARCHAR})
+      #{followUpTheme,jdbcType=VARCHAR}, #{nextRemindDate,jdbcType=DATE}, #{nextFollowUpTheme,jdbcType=VARCHAR}, 
+      #{followUpRecordType,jdbcType=INTEGER}, #{followUpRecordStatus,jdbcType=INTEGER}, 
+      #{followUpRecordCreateDate,jdbcType=TIMESTAMP}, #{followUpRecordUpdateDate,jdbcType=TIMESTAMP}, 
+      #{followUpContent,jdbcType=LONGVARCHAR}, #{nextFollowUpContent,jdbcType=LONGVARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs" >
     insert into follow_up_record
@@ -173,6 +176,9 @@
       </if>
       <if test="nextRemindDate != null" >
         next_remind_date,
+      </if>
+      <if test="nextFollowUpTheme != null" >
+        next_follow_up_theme,
       </if>
       <if test="followUpRecordType != null" >
         follow_up_record_type,
@@ -217,6 +223,9 @@
       </if>
       <if test="nextRemindDate != null" >
         #{nextRemindDate,jdbcType=DATE},
+      </if>
+      <if test="nextFollowUpTheme != null" >
+        #{nextFollowUpTheme,jdbcType=VARCHAR},
       </if>
       <if test="followUpRecordType != null" >
         #{followUpRecordType,jdbcType=INTEGER},
@@ -271,6 +280,9 @@
       <if test="record.nextRemindDate != null" >
         next_remind_date = #{record.nextRemindDate,jdbcType=DATE},
       </if>
+      <if test="record.nextFollowUpTheme != null" >
+        next_follow_up_theme = #{record.nextFollowUpTheme,jdbcType=VARCHAR},
+      </if>
       <if test="record.followUpRecordType != null" >
         follow_up_record_type = #{record.followUpRecordType,jdbcType=INTEGER},
       </if>
@@ -304,6 +316,7 @@
       follow_up_date = #{record.followUpDate,jdbcType=DATE},
       follow_up_theme = #{record.followUpTheme,jdbcType=VARCHAR},
       next_remind_date = #{record.nextRemindDate,jdbcType=DATE},
+      next_follow_up_theme = #{record.nextFollowUpTheme,jdbcType=VARCHAR},
       follow_up_record_type = #{record.followUpRecordType,jdbcType=INTEGER},
       follow_up_record_status = #{record.followUpRecordStatus,jdbcType=INTEGER},
       follow_up_record_create_date = #{record.followUpRecordCreateDate,jdbcType=TIMESTAMP},
@@ -324,6 +337,7 @@
       follow_up_date = #{record.followUpDate,jdbcType=DATE},
       follow_up_theme = #{record.followUpTheme,jdbcType=VARCHAR},
       next_remind_date = #{record.nextRemindDate,jdbcType=DATE},
+      next_follow_up_theme = #{record.nextFollowUpTheme,jdbcType=VARCHAR},
       follow_up_record_type = #{record.followUpRecordType,jdbcType=INTEGER},
       follow_up_record_status = #{record.followUpRecordStatus,jdbcType=INTEGER},
       follow_up_record_create_date = #{record.followUpRecordCreateDate,jdbcType=TIMESTAMP},
@@ -356,6 +370,9 @@
       <if test="nextRemindDate != null" >
         next_remind_date = #{nextRemindDate,jdbcType=DATE},
       </if>
+      <if test="nextFollowUpTheme != null" >
+        next_follow_up_theme = #{nextFollowUpTheme,jdbcType=VARCHAR},
+      </if>
       <if test="followUpRecordType != null" >
         follow_up_record_type = #{followUpRecordType,jdbcType=INTEGER},
       </if>
@@ -386,6 +403,7 @@
       follow_up_date = #{followUpDate,jdbcType=DATE},
       follow_up_theme = #{followUpTheme,jdbcType=VARCHAR},
       next_remind_date = #{nextRemindDate,jdbcType=DATE},
+      next_follow_up_theme = #{nextFollowUpTheme,jdbcType=VARCHAR},
       follow_up_record_type = #{followUpRecordType,jdbcType=INTEGER},
       follow_up_record_status = #{followUpRecordStatus,jdbcType=INTEGER},
       follow_up_record_create_date = #{followUpRecordCreateDate,jdbcType=TIMESTAMP},
@@ -403,10 +421,31 @@
       follow_up_date = #{followUpDate,jdbcType=DATE},
       follow_up_theme = #{followUpTheme,jdbcType=VARCHAR},
       next_remind_date = #{nextRemindDate,jdbcType=DATE},
+      next_follow_up_theme = #{nextFollowUpTheme,jdbcType=VARCHAR},
       follow_up_record_type = #{followUpRecordType,jdbcType=INTEGER},
       follow_up_record_status = #{followUpRecordStatus,jdbcType=INTEGER},
       follow_up_record_create_date = #{followUpRecordCreateDate,jdbcType=TIMESTAMP},
       follow_up_record_update_date = #{followUpRecordUpdateDate,jdbcType=TIMESTAMP}
     where follow_up_record_id = #{followUpRecordId,jdbcType=VARCHAR}
   </update>
+
+  <select id="findFollowUpRecord" parameterType="java.lang.String" resultMap="Map">
+    SELECT
+        *
+    FROM
+        follow_up_record
+    ORDER BY
+        follow_up_record_update_date DESC;
+  </select>
+
+  <select id="findFollowUpRecordByUserId" parameterType="java.lang.String" resultMap="Map">
+    SELECT
+        *
+    FROM
+        follow_up_record
+    WHERE
+        user_id = #{userId}
+    ORDER BY
+        follow_up_record_update_date DESC;
+  </select>
 </mapper>

@@ -22,6 +22,8 @@ public class FollowUpRecord {
 
     private Date nextRemindDate;
 
+    private String nextFollowUpTheme;
+
     private Integer followUpRecordType;
 
     private Integer followUpRecordStatus;
