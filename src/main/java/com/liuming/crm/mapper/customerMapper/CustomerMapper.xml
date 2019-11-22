@@ -4,6 +4,9 @@
   <resultMap id="Map" type="com.liuming.crm.entity.customerEntity.Customer" >
     <id column="customer_id" property="customerId" jdbcType="VARCHAR" />
     <result column="customer_name" property="customerName" jdbcType="VARCHAR" />
+    <result column="customer_phone" property="customerPhone" jdbcType="VARCHAR" />
+    <result column="customer_wechat" property="customerWechat" jdbcType="VARCHAR" />
+    <result column="customer_wangwang" property="customerWangwang" jdbcType="VARCHAR" />
     <result column="customer_status_id" property="customerStatusId" jdbcType="VARCHAR" />
     <result column="customer_status_name" property="customerStatusName" jdbcType="VARCHAR" />
     <result column="user_id" property="userId" jdbcType="VARCHAR" />
@@ -78,10 +81,10 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    customer_id, customer_name, customer_status_id, customer_status_name, user_id, user_name, 
-    last_follow_up_date, province_code, province_short_name, city_code, city_short_name, 
-    district_code, district_short_name, customer_public_area_status, customer_created_date, 
-    customer_updated_date
+    customer_id, customer_name, customer_phone, customer_wechat, customer_wangwang, customer_status_id, 
+    customer_status_name, user_id, user_name, last_follow_up_date, province_code, province_short_name, 
+    city_code, city_short_name, district_code, district_short_name, customer_public_area_status, 
+    customer_created_date, customer_updated_date
   </sql>
   <select id="selectByExample" resultMap="Map" parameterType="com.liuming.crm.entity.customerEntity.CustomerExample" >
     select
@@ -114,14 +117,16 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.liuming.crm.entity.customerEntity.Customer" >
-    insert into customer (customer_id, customer_name, customer_status_id, 
+    insert into customer (customer_id, customer_name, customer_phone, 
+      customer_wechat, customer_wangwang, customer_status_id, 
       customer_status_name, user_id, user_name, 
       last_follow_up_date, province_code, province_short_name, 
       city_code, city_short_name, district_code, 
       district_short_name, customer_public_area_status, 
       customer_created_date, customer_updated_date
       )
-    values (#{customerId,jdbcType=VARCHAR}, #{customerName,jdbcType=VARCHAR}, #{customerStatusId,jdbcType=VARCHAR}, 
+    values (#{customerId,jdbcType=VARCHAR}, #{customerName,jdbcType=VARCHAR}, #{customerPhone,jdbcType=VARCHAR}, 
+      #{customerWechat,jdbcType=VARCHAR}, #{customerWangwang,jdbcType=VARCHAR}, #{customerStatusId,jdbcType=VARCHAR}, 
       #{customerStatusName,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
       #{lastFollowUpDate,jdbcType=DATE}, #{provinceCode,jdbcType=VARCHAR}, #{provinceShortName,jdbcType=VARCHAR}, 
       #{cityCode,jdbcType=VARCHAR}, #{cityShortName,jdbcType=VARCHAR}, #{districtCode,jdbcType=VARCHAR}, 
@@ -137,6 +142,15 @@
       </if>
       <if test="customerName != null" >
         customer_name,
+      </if>
+      <if test="customerPhone != null" >
+        customer_phone,
+      </if>
+      <if test="customerWechat != null" >
+        customer_wechat,
+      </if>
+      <if test="customerWangwang != null" >
+        customer_wangwang,
       </if>
       <if test="customerStatusId != null" >
         customer_status_id,
@@ -187,6 +201,15 @@
       </if>
       <if test="customerName != null" >
         #{customerName,jdbcType=VARCHAR},
+      </if>
+      <if test="customerPhone != null" >
+        #{customerPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="customerWechat != null" >
+        #{customerWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="customerWangwang != null" >
+        #{customerWangwang,jdbcType=VARCHAR},
       </if>
       <if test="customerStatusId != null" >
         #{customerStatusId,jdbcType=VARCHAR},
@@ -247,6 +270,15 @@
       <if test="record.customerName != null" >
         customer_name = #{record.customerName,jdbcType=VARCHAR},
       </if>
+      <if test="record.customerPhone != null" >
+        customer_phone = #{record.customerPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.customerWechat != null" >
+        customer_wechat = #{record.customerWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="record.customerWangwang != null" >
+        customer_wangwang = #{record.customerWangwang,jdbcType=VARCHAR},
+      </if>
       <if test="record.customerStatusId != null" >
         customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
       </if>
@@ -298,6 +330,9 @@
     update customer
     set customer_id = #{record.customerId,jdbcType=VARCHAR},
       customer_name = #{record.customerName,jdbcType=VARCHAR},
+      customer_phone = #{record.customerPhone,jdbcType=VARCHAR},
+      customer_wechat = #{record.customerWechat,jdbcType=VARCHAR},
+      customer_wangwang = #{record.customerWangwang,jdbcType=VARCHAR},
       customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
       customer_status_name = #{record.customerStatusName,jdbcType=VARCHAR},
       user_id = #{record.userId,jdbcType=VARCHAR},
@@ -321,6 +356,15 @@
     <set >
       <if test="customerName != null" >
         customer_name = #{customerName,jdbcType=VARCHAR},
+      </if>
+      <if test="customerPhone != null" >
+        customer_phone = #{customerPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="customerWechat != null" >
+        customer_wechat = #{customerWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="customerWangwang != null" >
+        customer_wangwang = #{customerWangwang,jdbcType=VARCHAR},
       </if>
       <if test="customerStatusId != null" >
         customer_status_id = #{customerStatusId,jdbcType=VARCHAR},
@@ -370,6 +414,9 @@
   <update id="updateByPrimaryKey" parameterType="com.liuming.crm.entity.customerEntity.Customer" >
     update customer
     set customer_name = #{customerName,jdbcType=VARCHAR},
+      customer_phone = #{customerPhone,jdbcType=VARCHAR},
+      customer_wechat = #{customerWechat,jdbcType=VARCHAR},
+      customer_wangwang = #{customerWangwang,jdbcType=VARCHAR},
       customer_status_id = #{customerStatusId,jdbcType=VARCHAR},
       customer_status_name = #{customerStatusName,jdbcType=VARCHAR},
       user_id = #{userId,jdbcType=VARCHAR},
@@ -386,4 +433,32 @@
       customer_updated_date = #{customerUpdatedDate,jdbcType=TIMESTAMP}
     where customer_id = #{customerId,jdbcType=VARCHAR}
   </update>
+
+  <select id="findCustomerByUserId" parameterType="java.lang.String" resultMap="Map">
+    SELECT
+        *
+    FROM
+        customer
+    WHERE
+        user_id = #{userId}
+  </select>
+
+  <select id="findCustomerByPhoneAndWechatAndWangwang" parameterType="com.liuming.crm.entity.customerEntity.Customer"
+          resultMap="Map">
+    SELECT
+        *
+    FROM
+        customer
+    WHERE
+      <if test="customerPhone != null" >
+        customer_phone = #{customerPhone,jdbcType=VARCHAR} OR
+      </if>
+      <if test="customerWechat != null" >
+        customer_wechat = #{customerWechat,jdbcType=VARCHAR} OR
+      </if>
+      <if test="customerWangwang != null" >
+        customer_wangwang = #{customerWangwang,jdbcType=VARCHAR} OR
+      </if>
+      1 = 1
+  </select>
 </mapper>

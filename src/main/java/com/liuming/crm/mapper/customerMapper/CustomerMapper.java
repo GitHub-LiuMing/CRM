@@ -2,6 +2,7 @@ package com.liuming.crm.mapper.customerMapper;
 
 import com.liuming.crm.entity.customerEntity.Customer;
 import com.liuming.crm.entity.customerEntity.CustomerExample;
+
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -30,4 +31,8 @@ public interface CustomerMapper {
     int updateByPrimaryKeySelective(Customer record);
 
     int updateByPrimaryKey(Customer record);
+
+    List<Customer> findCustomerByUserId(@Param("userId") String userId);
+
+    Customer findCustomerByPhoneAndWechatAndWangwang(Customer customer);
 }
