@@ -35,4 +35,6 @@ public interface CustomerMapper {
     List<Customer> findCustomerByUserId(@Param("userId") String userId);
 
     Customer findCustomerByPhoneAndWechatAndWangwang(Customer customer);
+
+    List<Customer> findCustomer();
 }

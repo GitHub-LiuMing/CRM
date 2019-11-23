@@ -47,6 +47,13 @@ public class CustomerController {
         }
     }
 
+    /**
+     * @Description 查询客户
+     * @param userId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.23 10:01
+     */
     @RequestMapping("/findCustomer")
     public DataResult findCustomer(String userId) {
         if (StringUtils.isNotBlank(userId)) {
@@ -54,5 +61,16 @@ public class CustomerController {
         } else {
             return DataResult.build(500, "用户ID不得为空");
         }
+    }
+    /**
+     * @Description 修改客户信息
+     * @param customer
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.23 15:45
+     */
+    @RequestMapping("/updateCustomer")
+    public DataResult updateCustomer(Customer customer){
+        return customerService.updateCustomer(customer);
     }
 }

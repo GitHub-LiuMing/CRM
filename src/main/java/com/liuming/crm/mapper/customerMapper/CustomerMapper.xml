@@ -461,4 +461,11 @@
       </if>
       1 = 1
   </select>
+
+  <select id="findCustomer" resultMap="Map">
+    SELECT
+        *
+    FROM
+        customer
+  </select>
 </mapper>

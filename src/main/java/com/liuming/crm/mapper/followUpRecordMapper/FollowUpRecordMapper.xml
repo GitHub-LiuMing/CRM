@@ -429,22 +429,22 @@
     where follow_up_record_id = #{followUpRecordId,jdbcType=VARCHAR}
   </update>
 
-  <select id="findFollowUpRecord" parameterType="java.lang.String" resultMap="Map">
-    SELECT
-        *
-    FROM
-        follow_up_record
-    ORDER BY
-        follow_up_record_update_date DESC;
-  </select>
-
-  <select id="findFollowUpRecordByUserId" parameterType="java.lang.String" resultMap="Map">
+  <select id="findFollowUpRecordByUserId" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     SELECT
         *
     FROM
         follow_up_record
     WHERE
         user_id = #{userId}
+    ORDER BY
+        follow_up_record_update_date DESC;
+  </select>
+
+  <select id="findFollowUpRecord" resultMap="ResultMapWithBLOBs">
+    SELECT
+        *
+    FROM
+        follow_up_record
     ORDER BY
         follow_up_record_update_date DESC;
   </select>

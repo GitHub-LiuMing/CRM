@@ -41,5 +41,7 @@ public interface WorkReportMapper {
     WorkReport findWorkReportByUserIdAndDate(@Param("workReportUserId") String workReportUserId, @Param(
             "workReportUpdatedDate") String format);
 
-    List<WorkReport> findWorkReportByUserId(@Param("workReportUserId") String workReportUserId);
+    List<WorkReportWithBLOBs> findWorkReportByUserId(@Param("workReportUserId") String workReportUserId);
+
+    List<WorkReportWithBLOBs> findWorkReport();
 }

@@ -346,6 +346,7 @@
         work_report_user_id = #{workReportUserId}
         AND work_report_updated_date LIKE #{workReportUpdatedDate}
   </select>
+
   <select id="findWorkReportByUserId" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     SELECT
         *
@@ -353,6 +354,15 @@
         work_report
     WHERE
         work_report_user_id = #{workReportUserId}
+    ORDER BY
+        work_report_updated_date DESC
+  </select>
+
+  <select id="findWorkReport" resultMap="ResultMapWithBLOBs">
+    SELECT
+        *
+    FROM
+        work_report
     ORDER BY
         work_report_updated_date DESC
   </select>

@@ -7,4 +7,6 @@ public interface CustomerService {
     DataResult addCustomer(Customer customer);
 
     DataResult findCustomer(String userId);
+
+    DataResult updateCustomer(Customer customer);
 }

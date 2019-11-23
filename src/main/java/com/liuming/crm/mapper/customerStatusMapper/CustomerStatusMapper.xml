@@ -3,7 +3,7 @@
 <mapper namespace="com.liuming.crm.mapper.customerStatusMapper.CustomerStatusMapper" >
   <resultMap id="Map" type="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
     <id column="customer_status_id" property="customerStatusId" jdbcType="VARCHAR" />
-    <result column="customer_status_name" property="customerStatusName" jdbcType="INTEGER" />
+    <result column="customer_status_name" property="customerStatusName" jdbcType="VARCHAR" />
     <result column="customer_status_status" property="customerStatusStatus" jdbcType="INTEGER" />
     <result column="customer_status_created_date" property="customerStatusCreatedDate" jdbcType="TIMESTAMP" />
     <result column="customer_status_updated_date" property="customerStatusUpdatedDate" jdbcType="TIMESTAMP" />
@@ -104,7 +104,7 @@
     insert into customer_status (customer_status_id, customer_status_name, 
       customer_status_status, customer_status_created_date, 
       customer_status_updated_date)
-    values (#{customerStatusId,jdbcType=VARCHAR}, #{customerStatusName,jdbcType=INTEGER}, 
+    values (#{customerStatusId,jdbcType=VARCHAR}, #{customerStatusName,jdbcType=VARCHAR}, 
       #{customerStatusStatus,jdbcType=INTEGER}, #{customerStatusCreatedDate,jdbcType=TIMESTAMP}, 
       #{customerStatusUpdatedDate,jdbcType=TIMESTAMP})
   </insert>
@@ -132,7 +132,7 @@
         #{customerStatusId,jdbcType=VARCHAR},
       </if>
       <if test="customerStatusName != null" >
-        #{customerStatusName,jdbcType=INTEGER},
+        #{customerStatusName,jdbcType=VARCHAR},
       </if>
       <if test="customerStatusStatus != null" >
         #{customerStatusStatus,jdbcType=INTEGER},
@@ -158,7 +158,7 @@
         customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
       </if>
       <if test="record.customerStatusName != null" >
-        customer_status_name = #{record.customerStatusName,jdbcType=INTEGER},
+        customer_status_name = #{record.customerStatusName,jdbcType=VARCHAR},
       </if>
       <if test="record.customerStatusStatus != null" >
         customer_status_status = #{record.customerStatusStatus,jdbcType=INTEGER},
@@ -177,7 +177,7 @@
   <update id="updateByExample" parameterType="map" >
     update customer_status
     set customer_status_id = #{record.customerStatusId,jdbcType=VARCHAR},
-      customer_status_name = #{record.customerStatusName,jdbcType=INTEGER},
+      customer_status_name = #{record.customerStatusName,jdbcType=VARCHAR},
       customer_status_status = #{record.customerStatusStatus,jdbcType=INTEGER},
       customer_status_created_date = #{record.customerStatusCreatedDate,jdbcType=TIMESTAMP},
       customer_status_updated_date = #{record.customerStatusUpdatedDate,jdbcType=TIMESTAMP}
@@ -189,7 +189,7 @@
     update customer_status
     <set >
       <if test="customerStatusName != null" >
-        customer_status_name = #{customerStatusName,jdbcType=INTEGER},
+        customer_status_name = #{customerStatusName,jdbcType=VARCHAR},
       </if>
       <if test="customerStatusStatus != null" >
         customer_status_status = #{customerStatusStatus,jdbcType=INTEGER},
@@ -205,13 +205,13 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.liuming.crm.entity.customerStatusEntity.CustomerStatus" >
     update customer_status
-    set customer_status_name = #{customerStatusName,jdbcType=INTEGER},
+    set customer_status_name = #{customerStatusName,jdbcType=VARCHAR},
       customer_status_status = #{customerStatusStatus,jdbcType=INTEGER},
       customer_status_created_date = #{customerStatusCreatedDate,jdbcType=TIMESTAMP},
       customer_status_updated_date = #{customerStatusUpdatedDate,jdbcType=TIMESTAMP}
     where customer_status_id = #{customerStatusId,jdbcType=VARCHAR}
   </update>
-  <select id="findCustomerStatusByName" parameterType="java.lang.Integer" resultMap="Map">
+  <select id="findCustomerStatusByName" parameterType="java.lang.String" resultMap="Map">
     SELECT
         *
     FROM

@@ -185,52 +185,62 @@ public class CustomerStatusExample {
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameEqualTo(Integer value) {
+        public Criteria andCustomerStatusNameEqualTo(String value) {
             addCriterion("customer_status_name =", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameNotEqualTo(Integer value) {
+        public Criteria andCustomerStatusNameNotEqualTo(String value) {
             addCriterion("customer_status_name <>", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameGreaterThan(Integer value) {
+        public Criteria andCustomerStatusNameGreaterThan(String value) {
             addCriterion("customer_status_name >", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameGreaterThanOrEqualTo(Integer value) {
+        public Criteria andCustomerStatusNameGreaterThanOrEqualTo(String value) {
             addCriterion("customer_status_name >=", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameLessThan(Integer value) {
+        public Criteria andCustomerStatusNameLessThan(String value) {
             addCriterion("customer_status_name <", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameLessThanOrEqualTo(Integer value) {
+        public Criteria andCustomerStatusNameLessThanOrEqualTo(String value) {
             addCriterion("customer_status_name <=", value, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameIn(List<Integer> values) {
+        public Criteria andCustomerStatusNameLike(String value) {
+            addCriterion("customer_status_name like", value, "customerStatusName");
+            return (Criteria) this;
+        }
+
+        public Criteria andCustomerStatusNameNotLike(String value) {
+            addCriterion("customer_status_name not like", value, "customerStatusName");
+            return (Criteria) this;
+        }
+
+        public Criteria andCustomerStatusNameIn(List<String> values) {
             addCriterion("customer_status_name in", values, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameNotIn(List<Integer> values) {
+        public Criteria andCustomerStatusNameNotIn(List<String> values) {
             addCriterion("customer_status_name not in", values, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameBetween(Integer value1, Integer value2) {
+        public Criteria andCustomerStatusNameBetween(String value1, String value2) {
             addCriterion("customer_status_name between", value1, value2, "customerStatusName");
             return (Criteria) this;
         }
 
-        public Criteria andCustomerStatusNameNotBetween(Integer value1, Integer value2) {
+        public Criteria andCustomerStatusNameNotBetween(String value1, String value2) {
             addCriterion("customer_status_name not between", value1, value2, "customerStatusName");
             return (Criteria) this;
         }

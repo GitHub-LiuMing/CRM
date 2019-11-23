@@ -1,7 +1,9 @@
 package com.liuming.crm.service.workReportService.impl;
 
+import com.liuming.crm.entity.userEntity.User;
 import com.liuming.crm.entity.workReportEntity.WorkReport;
 import com.liuming.crm.entity.workReportEntity.WorkReportWithBLOBs;
+import com.liuming.crm.mapper.userMapper.UserMapper;
 import com.liuming.crm.mapper.workReportMapper.WorkReportMapper;
 import com.liuming.crm.service.workReportService.WorkReportService;
 import com.liuming.crm.utils.DataResult;
@@ -23,6 +25,9 @@ import java.util.List;
 public class WorkReportServiceImpl implements WorkReportService {
     @Resource
     private WorkReportMapper workReportMapper;
+
+    @Resource
+    private UserMapper userMapper;
 
     @Override
     public DataResult addWorkReport(WorkReportWithBLOBs workReportWithBLOBs) {
@@ -48,9 +53,19 @@ public class WorkReportServiceImpl implements WorkReportService {
 
     @Override
     public DataResult findWorkReport(String workReportUserId) {
-        // TODO: 2019/11/20 上线前需要完成根据用户表的用户类型分析返回的数据，如果只是普通用户，则返回该用户的工作报告，如果类型为管理员和超级管理员，则返回所有用户的工作报告
-        List<WorkReport> workReportList = workReportMapper.findWorkReportByUserId(workReportUserId);
-        return DataResult.ok(workReportList);
+        User user = userMapper.selectByPrimaryKey(workReportUserId);
+        List<WorkReportWithBLOBs> workReportWithBLOBsList;
+        if (user != null){
+            if (user.getUserType() == 0 || user.getUserType() ==1){
+                workReportWithBLOBsList = workReportMapper.findWorkReport();
+                return DataResult.ok(workReportWithBLOBsList);
+            } else {
+                workReportWithBLOBsList = workReportMapper.findWorkReportByUserId(workReportUserId);
+                return DataResult.ok(workReportWithBLOBsList);
+            }
+        } else {
+            return DataResult.build(500,"用户不存在");
+        }
     }
 
     @Override

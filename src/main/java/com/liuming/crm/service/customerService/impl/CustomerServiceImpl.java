@@ -1,7 +1,9 @@
 package com.liuming.crm.service.customerService.impl;
 
 import com.liuming.crm.entity.customerEntity.Customer;
+import com.liuming.crm.entity.userEntity.User;
 import com.liuming.crm.mapper.customerMapper.CustomerMapper;
+import com.liuming.crm.mapper.userMapper.UserMapper;
 import com.liuming.crm.service.customerService.CustomerService;
 import com.liuming.crm.utils.DataResult;
 import com.liuming.crm.utils.IDUtils;
@@ -21,6 +23,9 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
     @Resource
     private CustomerMapper customerMapper;
+
+    @Resource
+    private UserMapper userMapper;
 
     @Override
     public DataResult addCustomer(Customer customer) {
@@ -44,7 +49,49 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public DataResult findCustomer(String userId) {
-        List<Customer> customerList = customerMapper.findCustomerByUserId(userId);
-        return DataResult.ok(customerList);
+        User user = userMapper.selectByPrimaryKey(userId);
+        List<Customer> customerList;
+        if (user != null) {
+            if (user.getUserType() == 0 || user.getUserType() == 1) {
+                /**
+                 * 当用户类型为超级管理员和管理员的时候，返回所有的客户
+                 */
+                List<Customer> customers = customerMapper.findCustomer();
+                return DataResult.ok(customers);
+            } else {
+                customerList = customerMapper.findCustomerByUserId(userId);
+                return DataResult.ok(customerList);
+            }
+        } else {
+            return DataResult.build(500,"用户不存在");
+        }
+    }
+
+    @Override
+    public DataResult updateCustomer(Customer customer) {
+        Customer selectByPrimaryKey = customerMapper.selectByPrimaryKey(customer.getCustomerId());
+        if (selectByPrimaryKey.getCustomerStatusName().equals("已成交")){//判断用户是否成交
+            if (selectByPrimaryKey.getUserId() == customer.getUserId()){
+                //用户已成交，并且用户ID和修改前的ID相同，则允许对客户信息进行修改
+                int i = customerMapper.updateByPrimaryKeySelective(customer);
+                if (i > 0){
+                    return DataResult.build(200,"客户信息修改成功");
+                } else {
+                    return DataResult.build(500,"客户信息修改失败");
+                }
+            } else {
+                //用户已成交，但是用户ID和修改前的ID不同，则不允许对客户信息进行修改
+                return DataResult.build(500,"该客户已成交，无权修改该客户信息");
+            }
+        } else {
+            //用户未成交，允许修改客户信息
+            int i = customerMapper.updateByPrimaryKeySelective(customer);
+            if (i > 0){
+                return DataResult.build(200,"客户信息修改成功");
+            } else {
+                return DataResult.build(500,"客户信息修改失败");
+            }
+        }
+
     }
 }

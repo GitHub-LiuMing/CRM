@@ -2,7 +2,9 @@ package com.liuming.crm.service.followUpRecordService.impl;
 
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecord;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs;
+import com.liuming.crm.entity.userEntity.User;
 import com.liuming.crm.mapper.followUpRecordMapper.FollowUpRecordMapper;
+import com.liuming.crm.mapper.userMapper.UserMapper;
 import com.liuming.crm.service.followUpRecordService.FollowUpRecordService;
 import com.liuming.crm.utils.DataResult;
 import com.liuming.crm.utils.IDUtils;
@@ -23,6 +25,9 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
     @Resource
     private FollowUpRecordMapper followUpRecordMapper;
 
+    @Resource
+    private UserMapper userMapper;
+
     @Override
     public DataResult addFollowUpRecord(FollowUpRecordWithBLOBs followUpRecordWithBLOBs) {
         followUpRecordWithBLOBs.setFollowUpRecordId(IDUtils.getID());
@@ -38,9 +43,19 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
 
     @Override
     public DataResult findFollowUpRecord(String userId) {
-        // TODO: 2019/11/21 上线前需要完成根据用户表的用户类型分析返回的数据，如果只是普通用户，则返回该用户的跟进记录，如果类型为管理员和超级管理员，则返回所有用户的跟进记录
-        List<FollowUpRecordWithBLOBs> followUpRecordWithBLOBsList =
-                followUpRecordMapper.findFollowUpRecordByUserId(userId);
-        return DataResult.ok(followUpRecordWithBLOBsList);
+        User user = userMapper.selectByPrimaryKey(userId);
+        List<FollowUpRecordWithBLOBs> followUpRecordWithBLOBsList;
+        if (user != null){
+            if (user.getUserType() == 0 || user.getUserType() == 1){
+                followUpRecordWithBLOBsList = followUpRecordMapper.findFollowUpRecord();
+                return DataResult.ok(followUpRecordWithBLOBsList);
+            } else {
+                followUpRecordWithBLOBsList =
+                        followUpRecordMapper.findFollowUpRecordByUserId(userId);
+                return DataResult.ok(followUpRecordWithBLOBsList);
+            }
+        } else {
+            return DataResult.build(500,"用户不存在");
+        }
     }
 }

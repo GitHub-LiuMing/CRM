@@ -31,7 +31,7 @@ public interface CustomerStatusMapper {
 
     int updateByPrimaryKey(CustomerStatus record);
 
-    CustomerStatus findCustomerStatusByName(@Param("customerStatusName") Integer customerStatusName);
+    CustomerStatus findCustomerStatusByName(@Param("customerStatusName") String customerStatusName);
 
     int delCustomerStatus(@Param("customerStatusId") String customerStatusId);
 

@@ -39,4 +39,6 @@ public interface FollowUpRecordMapper {
     int updateByPrimaryKey(FollowUpRecord record);
 
     List<FollowUpRecordWithBLOBs> findFollowUpRecordByUserId(@Param("userId") String userId);
+
+    List<FollowUpRecordWithBLOBs> findFollowUpRecord();
 }

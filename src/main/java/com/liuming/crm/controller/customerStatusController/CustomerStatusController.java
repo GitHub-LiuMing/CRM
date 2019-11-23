@@ -49,12 +49,12 @@ public class CustomerStatusController {
         }
     }
 
-    @RequestMapping("/updateCustomerStatus")
-    public DataResult updateCustomerStatus(){
-        // TODO: 2019/11/19  更新接口待完成
-        return null;
-    }
-
+    /**
+     * @Description 查询客户状态
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.23 10:49
+     */
     @RequestMapping("/findCustomerStatus")
     public DataResult findCustomerStatus(){
         return customerStatusService.findCustomerStatus();
