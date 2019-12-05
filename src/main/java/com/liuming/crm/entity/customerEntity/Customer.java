@@ -10,12 +10,6 @@ public class Customer {
 
     private String customerName;
 
-    private String customerPhone;
-
-    private String customerWechat;
-
-    private String customerWangwang;
-
     private String customerStatusId;
 
     private String customerStatusName;

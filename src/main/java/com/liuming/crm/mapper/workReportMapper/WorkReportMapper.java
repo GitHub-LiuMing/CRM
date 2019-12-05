@@ -44,4 +44,8 @@ public interface WorkReportMapper {
     List<WorkReportWithBLOBs> findWorkReportByUserId(@Param("workReportUserId") String workReportUserId);
 
     List<WorkReportWithBLOBs> findWorkReport();
+
+    int findWorkReportCount();
+
+    int findWorkReportCountByUserId(@Param("workReportUserId") String workReportUserId);
 }

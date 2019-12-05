@@ -6,7 +6,9 @@ import com.liuming.crm.utils.DataResult;
 public interface WorkReportService {
     DataResult addWorkReport(WorkReportWithBLOBs workReportWithBLOBs);
 
-    DataResult findWorkReport(String workReportUserId);
+    DataResult findWorkReportByUserId(int pageNum, int pageSize, String workReportUserId);
 
     DataResult addReviews(WorkReportWithBLOBs workReportWithBLOBs);
+
+    DataResult findWorkReportById(String workReportId);
 }

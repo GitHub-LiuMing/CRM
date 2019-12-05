@@ -1,5 +1,6 @@
 package com.liuming.crm.service.workReportService.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.liuming.crm.entity.userEntity.User;
 import com.liuming.crm.entity.workReportEntity.WorkReport;
 import com.liuming.crm.entity.workReportEntity.WorkReportWithBLOBs;
@@ -8,6 +9,7 @@ import com.liuming.crm.mapper.workReportMapper.WorkReportMapper;
 import com.liuming.crm.service.workReportService.WorkReportService;
 import com.liuming.crm.utils.DataResult;
 import com.liuming.crm.utils.IDUtils;
+import com.liuming.crm.utils.PageBean;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -52,16 +54,42 @@ public class WorkReportServiceImpl implements WorkReportService {
     }
 
     @Override
-    public DataResult findWorkReport(String workReportUserId) {
+    public DataResult findWorkReportByUserId(int pageNum, int pageSize, String workReportUserId) {
         User user = userMapper.selectByPrimaryKey(workReportUserId);
         List<WorkReportWithBLOBs> workReportWithBLOBsList;
+        int workReportCount;
+        PageBean<WorkReportWithBLOBs> workReportPageBean;
         if (user != null){
-            if (user.getUserType() == 0 || user.getUserType() ==1){
-                workReportWithBLOBsList = workReportMapper.findWorkReport();
-                return DataResult.ok(workReportWithBLOBsList);
+            if (pageNum > 0 && pageSize >= 1){
+                //设置分页数据
+                PageHelper.startPage(pageNum, pageSize);
+                if (user.getUserType() == 0 || user.getUserType() ==1){
+                    workReportWithBLOBsList = workReportMapper.findWorkReport();
+                    workReportCount = workReportMapper.findWorkReportCount();
+                    workReportPageBean = new PageBean<>(pageNum,pageSize,workReportCount);
+                    workReportPageBean.setItems(workReportWithBLOBsList);
+                    return DataResult.ok(workReportPageBean);
+                } else {
+                    workReportWithBLOBsList = workReportMapper.findWorkReportByUserId(workReportUserId);
+                    workReportCount = workReportMapper.findWorkReportCountByUserId(workReportUserId);
+                    workReportPageBean = new PageBean<>(pageNum, pageSize, workReportCount);
+                    workReportPageBean.setItems(workReportWithBLOBsList);
+                    return DataResult.ok(workReportPageBean);
+                }
             } else {
-                workReportWithBLOBsList = workReportMapper.findWorkReportByUserId(workReportUserId);
-                return DataResult.ok(workReportWithBLOBsList);
+                if (user.getUserType() == 0 || user.getUserType() ==1){
+                    workReportWithBLOBsList = workReportMapper.findWorkReport();
+                    workReportCount = workReportMapper.findWorkReportCount();
+                    workReportPageBean = new PageBean<>(pageNum,pageSize,workReportCount);
+                    workReportPageBean.setItems(workReportWithBLOBsList);
+                    return DataResult.ok(workReportPageBean);
+                } else {
+                    workReportWithBLOBsList = workReportMapper.findWorkReportByUserId(workReportUserId);
+                    workReportCount = workReportMapper.findWorkReportCountByUserId(workReportUserId);
+                    workReportPageBean = new PageBean<>(pageNum, pageSize, workReportCount);
+                    workReportPageBean.setItems(workReportWithBLOBsList);
+                    return DataResult.ok(workReportPageBean);
+                }
             }
         } else {
             return DataResult.build(500,"用户不存在");
@@ -77,5 +105,11 @@ public class WorkReportServiceImpl implements WorkReportService {
         } else {
             return DataResult.build(500,"点评失败");
         }
+    }
+
+    @Override
+    public DataResult findWorkReportById(String workReportId) {
+        WorkReportWithBLOBs workReportWithBLOBs = workReportMapper.selectByPrimaryKey(workReportId);
+        return DataResult.ok(workReportWithBLOBs);
     }
 }

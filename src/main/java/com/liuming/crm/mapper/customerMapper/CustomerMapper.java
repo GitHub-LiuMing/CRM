@@ -1,6 +1,7 @@
 package com.liuming.crm.mapper.customerMapper;
 
 import com.liuming.crm.entity.customerEntity.Customer;
+import com.liuming.crm.entity.customerEntity.CustomerAndContactPerson;
 import com.liuming.crm.entity.customerEntity.CustomerExample;
 
 import java.util.List;
@@ -32,9 +33,14 @@ public interface CustomerMapper {
 
     int updateByPrimaryKey(Customer record);
 
-    List<Customer> findCustomerByUserId(@Param("userId") String userId);
+    List<CustomerAndContactPerson> findCustomerByUserId(@Param("userId") String userId,
+                                                        @Param("customerSearchContent") String customerSearchContent);
 
-    Customer findCustomerByPhoneAndWechatAndWangwang(Customer customer);
+    List<CustomerAndContactPerson> findCustomer();
 
-    List<Customer> findCustomer();
+    int findCustomerCount();
+
+    int findCustomerCountByUserId(@Param("userId") String userId, @Param("customerSearchContent") String customerSearchContent);
+
+    List<CustomerAndContactPerson> findCustomerPublicArea();
 }

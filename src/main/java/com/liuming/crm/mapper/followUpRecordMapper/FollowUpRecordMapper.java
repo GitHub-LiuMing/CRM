@@ -41,4 +41,9 @@ public interface FollowUpRecordMapper {
     List<FollowUpRecordWithBLOBs> findFollowUpRecordByUserId(@Param("userId") String userId);
 
     List<FollowUpRecordWithBLOBs> findFollowUpRecord();
+
+    List<FollowUpRecordWithBLOBs> findFollowUpRecordByUserIdAndDate(@Param("userId") String userId, @Param(
+            "nextRemindDate") String date);
+
+    List<FollowUpRecordWithBLOBs> findFollowUpRecordByCustomerId(@Param("customerId") String customerId);
 }

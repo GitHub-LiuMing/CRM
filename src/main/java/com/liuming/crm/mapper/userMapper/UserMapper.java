@@ -34,4 +34,6 @@ public interface UserMapper {
     User findUserByUserName(@Param("userName") String userName);
 
     List<User> findUser();
+
+    int findUserCount();
 }

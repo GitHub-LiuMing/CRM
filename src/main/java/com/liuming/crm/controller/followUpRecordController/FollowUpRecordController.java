@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @Description 跟进记录
@@ -47,12 +49,67 @@ public class FollowUpRecordController {
         }
     }
 
-    @RequestMapping("/findFollowUpRecord")
-    public DataResult findFollowUpRecord(String userId){
+    /**
+     * @Description 查询跟进记录
+     * @param userId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.29 09:30
+     */
+    @RequestMapping("/findFollowUpRecordByUserId")
+    public DataResult findFollowUpRecordByUserId(String userId){
         if (StringUtils.isNotBlank(userId)){
-            return followUpRecordService.findFollowUpRecord(userId);
+            return followUpRecordService.findFollowUpRecordByUserId(userId);
         } else {
             return DataResult.build(500,"用户ID不能为空");
+        }
+    }
+
+    /**
+     * @Description 查询跟进提醒
+     * @param userId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.11.29 09:32
+     */
+    @RequestMapping("/findFollowUpRecordByRemind")
+    public DataResult findFollowUpRecordByRemind(String userId){
+        if (StringUtils.isNotBlank(userId)) {
+            return followUpRecordService.findFollowUpRecordByRemind(userId);
+        } else {
+            return DataResult.build(500,"用户ID获取失败");
+        }
+    }
+
+    /**
+     * @Description 根据跟进ID查询跟进详情
+     * @param followUpRecordId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.12.02 10:41
+     */
+    @RequestMapping("/findFollowUpRecordById")
+    public DataResult findFollowUpRecordById(String followUpRecordId){
+        if (StringUtils.isNotBlank(followUpRecordId)) {
+            return followUpRecordService.findFollowUpRecordById(followUpRecordId);
+        } else {
+            return DataResult.build(500,"跟进记录ID获取失败");
+        }
+    }
+
+    /**
+     * @Description 根据客户ID查询跟进记录
+     * @param customerId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.12.02 14:17
+     */
+    @RequestMapping("/findFollowUpRecordByCustomerId")
+    public DataResult findFollowUpRecordByCustomerId(String customerId){
+        if (StringUtils.isNotBlank(customerId)) {
+            return followUpRecordService.findFollowUpRecordByCustomerId(customerId);
+        } else {
+            return DataResult.build(500,"客户信息获取失败");
         }
     }
 }

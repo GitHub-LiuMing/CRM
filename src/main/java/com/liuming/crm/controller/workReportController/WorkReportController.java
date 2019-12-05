@@ -6,6 +6,7 @@ import com.liuming.crm.service.workReportService.WorkReportService;
 import com.liuming.crm.utils.DataResult;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -45,10 +46,12 @@ public class WorkReportController {
      * @Author 鲸落
      * @Date 2019.11.20 10:41
      */
-    @RequestMapping("/findWorkReport")
-    public DataResult findWorkReport(String workReportUserId){
+    @RequestMapping("/findWorkReportByUserId")
+    public DataResult findWorkReportByUserId(@RequestParam(defaultValue = "1") int pageNum,
+                                     @RequestParam(defaultValue = "10") int pageSize,
+                                     String workReportUserId){
         if (StringUtils.isNotBlank(workReportUserId)) {
-            return workReportService.findWorkReport(workReportUserId);
+            return workReportService.findWorkReportByUserId(pageNum, pageSize, workReportUserId);
         } else {
             return DataResult.build(500,"用户ID不得为空");
         }
@@ -67,6 +70,22 @@ public class WorkReportController {
             return workReportService.addReviews(workReportWithBLOBs);
         } else {
             return DataResult.build(500,"工作报告ID、点评用户ID、点评用户名称、工作报告点评不得为空");
+        }
+    }
+
+    /**
+     * @Description 根据工作报告ID查询工作报告详情
+     * @param workReportId
+     * @return com.liuming.crm.utils.DataResult
+     * @Author 鲸落
+     * @Date 2019.12.02 11:14
+     */
+    @RequestMapping("/findWorkReportById")
+    public DataResult findWorkReportById(String workReportId){
+        if (StringUtils.isNotBlank(workReportId)) {
+            return workReportService.findWorkReportById(workReportId);
+        } else {
+            return DataResult.build(500,"工作报告获取失败");
         }
     }
 }

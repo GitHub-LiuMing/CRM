@@ -6,5 +6,11 @@ import com.liuming.crm.utils.DataResult;
 public interface FollowUpRecordService {
     DataResult addFollowUpRecord(FollowUpRecordWithBLOBs followUpRecordWithBLOBs);
 
-    DataResult findFollowUpRecord(String userId);
+    DataResult findFollowUpRecordByUserId(String userId);
+
+    DataResult findFollowUpRecordByRemind(String userId);
+
+    DataResult findFollowUpRecordById(String followUpRecordId);
+
+    DataResult findFollowUpRecordByCustomerId(String customerId);
 }

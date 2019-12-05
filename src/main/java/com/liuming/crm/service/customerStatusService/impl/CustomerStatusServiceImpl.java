@@ -6,6 +6,7 @@ import com.liuming.crm.service.customerStatusService.CustomerStatusService;
 import com.liuming.crm.utils.DataResult;
 import com.liuming.crm.utils.IDUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -23,26 +24,31 @@ public class CustomerStatusServiceImpl implements CustomerStatusService {
     private CustomerStatusMapper customerStatusMapper;
 
     @Override
+    @Transactional
     public DataResult addCustomerStatus(CustomerStatus customerStatus) {
-        //判断用户名是否存在,判断ID是否存在
-        if (customerStatus.getCustomerStatusName() != null){
-            CustomerStatus customerStatusName =
-                    customerStatusMapper.findCustomerStatusByName(customerStatus.getCustomerStatusName());
-            if (customerStatusName == null) {
-                customerStatus.setCustomerStatusId(IDUtils.getID());
-                customerStatus.setCustomerStatusCreatedDate(new Date());
-                customerStatus.setCustomerStatusUpdatedDate(new Date());
-                int i = customerStatusMapper.insertSelective(customerStatus);
-                if (i > 0){
-                    return DataResult.build(200,"客户状态新增成功");
+        try {
+            //判断用户名是否存在,判断ID是否存在
+            if (customerStatus.getCustomerStatusName() != null){
+                CustomerStatus customerStatusName =
+                        customerStatusMapper.findCustomerStatusByName(customerStatus.getCustomerStatusName());
+                if (customerStatusName == null) {
+                    customerStatus.setCustomerStatusId(IDUtils.getID());
+                    customerStatus.setCustomerStatusCreatedDate(new Date());
+                    customerStatus.setCustomerStatusUpdatedDate(new Date());
+                    int i = customerStatusMapper.insertSelective(customerStatus);
+                    if (i > 0){
+                        return DataResult.build(200,"客户状态新增成功");
+                    } else {
+                        return DataResult.build(500,"客户状态新增异常");
+                    }
                 } else {
-                    return DataResult.build(500,"客户状态新增异常");
+                    return DataResult.build(500,"客户状态已存在");
                 }
             } else {
-                return DataResult.build(500,"客户状态已存在");
+                return DataResult.build(500,"客户名称不得为空");
             }
-        } else {
-            return DataResult.build(500,"客户名称不得为空");
+        } catch (Exception e) {
+            return DataResult.build(500,"系统异常");
         }
     }
 

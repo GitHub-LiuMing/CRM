@@ -11,6 +11,7 @@ import com.liuming.crm.utils.IDUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
     }
 
     @Override
-    public DataResult findFollowUpRecord(String userId) {
+    public DataResult findFollowUpRecordByUserId(String userId) {
         User user = userMapper.selectByPrimaryKey(userId);
         List<FollowUpRecordWithBLOBs> followUpRecordWithBLOBsList;
         if (user != null){
@@ -57,5 +58,25 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
         } else {
             return DataResult.build(500,"用户不存在");
         }
+    }
+
+    @Override
+    public DataResult findFollowUpRecordByRemind(String userId) {
+        String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+        List<FollowUpRecordWithBLOBs> followUpRecordByUserId =
+                followUpRecordMapper.findFollowUpRecordByUserIdAndDate(userId, date);
+        return DataResult.ok(followUpRecordByUserId);
+    }
+
+    @Override
+    public DataResult findFollowUpRecordById(String followUpRecordId) {
+        FollowUpRecordWithBLOBs followUpRecordWithBLOBs = followUpRecordMapper.selectByPrimaryKey(followUpRecordId);
+        return DataResult.ok(followUpRecordWithBLOBs);
+    }
+
+    @Override
+    public DataResult findFollowUpRecordByCustomerId(String customerId) {
+        List<FollowUpRecordWithBLOBs> followUpRecordByCustomerId = followUpRecordMapper.findFollowUpRecordByCustomerId(customerId);
+        return DataResult.ok(followUpRecordByCustomerId);
     }
 }
