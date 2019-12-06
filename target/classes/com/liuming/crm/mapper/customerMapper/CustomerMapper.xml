@@ -439,6 +439,8 @@
       AND CONCAT( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
+    GROUP BY
+	    cu.customer_id
     ORDER BY
 	    cu.customer_updated_date DESC
   </select>
@@ -460,13 +462,16 @@
     WHERE
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
+    GROUP BY
+	    cu.customer_id
     ORDER BY
 	    cu.customer_updated_date DESC
   </select>
 
   <select id="findCustomerCount" resultType="java.lang.Integer">
     SELECT
-        COUNT(*)
+        COUNT(
+	    DISTINCT ( cu.customer_id )) AS COUNT
     FROM
         contact_person AS cp,
         customer AS cu
@@ -474,14 +479,14 @@
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
     ORDER BY
-        cu.customer_updated_date DESC
+	    cu.customer_updated_date DESC
   </select>
 
   <select id="findCustomerCountByUserId" parameterType="java.lang.String"
           resultType="java.lang.Integer">
     SELECT
         COUNT(
-	    DISTINCT ( cu.customer_name )) AS COUNT
+	    DISTINCT ( cu.customer_id )) AS COUNT
     FROM
         contact_person AS cp,
         customer AS cu
@@ -518,5 +523,50 @@
         cu.customer_updated_date
     ORDER BY
         cu.customer_updated_date DESC
+  </select>
+
+  <select id="findCustomerByCustomerSearchContent" resultMap="CMap">
+    SELECT DISTINCT
+        cu.*,
+        cp.contact_person_id,
+        cp.contact_person_name,
+        cp.contact_person_phone,
+        cp.contact_person_wechat,
+        cp.contact_person_wangwang,
+        cp.contact_person_status,
+        cp.contact_person_created_date,
+        cp.contact_person_updated_date
+    FROM
+        contact_person AS cp,
+        customer AS cu
+    WHERE
+        cp.customer_id = cu.customer_id
+        AND cu.customer_public_area_status = 1
+    <if test="customerSearchContent != null and customerSearchContent != ''">
+      AND CONCAT( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
+    </if>
+    GROUP BY
+	    cu.customer_id
+    ORDER BY
+	    cu.customer_updated_date DESC
+  </select>
+
+  <select id="findCustomerCountByCustomerSearchContent" resultType="java.lang.Integer">
+    SELECT
+        COUNT(
+	    DISTINCT ( cu.customer_id )) AS COUNT
+    FROM
+        contact_person AS cp,
+        customer AS cu
+    WHERE
+        cp.customer_id = cu.customer_id
+        AND cu.customer_public_area_status = 1
+    <if test="customerSearchContent != null and customerSearchContent != ''">
+      AND CONCAT( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
+    </if>
+    ORDER BY
+	    cu.customer_updated_date DESC
   </select>
 </mapper>

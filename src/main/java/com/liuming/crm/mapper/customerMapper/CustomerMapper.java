@@ -43,4 +43,8 @@ public interface CustomerMapper {
     int findCustomerCountByUserId(@Param("userId") String userId, @Param("customerSearchContent") String customerSearchContent);
 
     List<CustomerAndContactPerson> findCustomerPublicArea();
+
+    List<CustomerAndContactPerson> findCustomerByCustomerSearchContent(@Param("customerSearchContent") String customerSearchContent);
+
+    int findCustomerCountByCustomerSearchContent(@Param("customerSearchContent") String customerSearchContent);
 }

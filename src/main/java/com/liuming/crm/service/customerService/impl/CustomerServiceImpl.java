@@ -88,8 +88,8 @@ public class CustomerServiceImpl implements CustomerService {
                      * 当用户类型为超级管理员和管理员的时候，返回所有的客户
                      */
                     // TODO: 2019/11/26 返回结果要获取最新的联系人信息
-                    customerAndContactPersonList = customerMapper.findCustomer();
-                    customerCount = customerMapper.findCustomerCount();
+                    customerAndContactPersonList = customerMapper.findCustomerByCustomerSearchContent(customerSearchContent);
+                    customerCount = customerMapper.findCustomerCountByCustomerSearchContent(customerSearchContent);
                     personPageBean = new PageBean<>(pageNum, pageSize, customerCount);
                     personPageBean.setItems(customerAndContactPersonList);
                     return DataResult.ok(personPageBean);
@@ -106,8 +106,8 @@ public class CustomerServiceImpl implements CustomerService {
                      * 当用户类型为超级管理员和管理员的时候，返回所有的客户
                      */
                     // TODO: 2019/11/26 返回结果要获取最新的联系人信息
-                    customerAndContactPersonList = customerMapper.findCustomer();
-                    customerCount = customerMapper.findCustomerCount();
+                    customerAndContactPersonList = customerMapper.findCustomerByCustomerSearchContent(customerSearchContent);
+                    customerCount = customerMapper.findCustomerCountByCustomerSearchContent(customerSearchContent);
                     personPageBean = new PageBean<>(pageNum, pageSize, customerCount);
                     personPageBean.setItems(customerAndContactPersonList);
                     return DataResult.ok(personPageBean);

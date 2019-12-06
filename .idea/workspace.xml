@@ -2,480 +2,229 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8143cd6e-5da8-4cb9-9109-57e70af73323" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/crm_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/crm_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5bc32672-9e6c-4283-a372-ba775ebecaed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5bc32672-9e6c-4283-a372-ba775ebecaed/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-11-19T031800.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-11-19T031843.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/contactPersonController/ContactPersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/contactPersonEntity/ContactPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/CustomerAndContactPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/CustomerDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/contactPersonService/ContactPersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/contactPersonService/impl/ContactPersonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/utils/PageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/app.515d0334.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/customerDetail_updateCustomerDetail.809feb36.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/customerUpdate_createUpdate_updateDetail.46e5adbd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/daily_checkedDaily.f47a0bf9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/editDetail_custoerPublicAreaDetail.85c578fc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/linkmanMain_userControl.06e91c68.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login_main_welcome.ff8fc8d0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/myClient_createClient_customerPublicArea.fb883aad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.335af26b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logoMain.c2013ca4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/app.13dc7c08.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/app.13dc7c08.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/chunk-vendors.a1e47bb2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/chunk-vendors.a1e47bb2.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerDetail_updateCustomerDetail.4e1c026a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerDetail_updateCustomerDetail.4e1c026a.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.023d6538.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.023d6538.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/daily_checkedDaily.f48b0665.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/daily_checkedDaily.f48b0665.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/editDetail_custoerPublicAreaDetail.a2a70618.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/editDetail_custoerPublicAreaDetail.a2a70618.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/linkmanMain_userControl.1bacb2c9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/linkmanMain_userControl.1bacb2c9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.e73b3f10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.e73b3f10.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.7984cb11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.7984cb11.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/CrmApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/config/CorsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/cityController/CityController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/contactPersonController/ContactPersonController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/customerController/CustomerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/customerStatusController/CustomerStatusController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/districtController/DistrictController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/followUpRecordController/FollowUpRecordController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/provinceController/ProvinceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/userController/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/workReportController/WorkReportController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/cityEntity/City.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/cityEntity/CityExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/cityEntity/CityExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/cityEntity/CityExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/cityEntity/CityExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/contactPersonEntity/ContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerAndContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerEntity/CustomerExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/districtEntity/District.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/districtEntity/DistrictExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/districtEntity/DistrictExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordWithBLOBs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/provinceEntity/Province.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/userEntity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/userEntity/UserExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/userEntity/UserExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/userEntity/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/userEntity/UserExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/entity/workReportEntity/WorkReportWithBLOBs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/cityMapper/CityMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/cityMapper/CityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/userMapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/userMapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/cityService/CityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/cityService/impl/CityServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/contactPersonService/ContactPersonService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/contactPersonService/impl/ContactPersonServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerService/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerStatusService/CustomerStatusService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerStatusService/impl/CustomerStatusServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/districtService/DistrictService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/districtService/impl/DistrictServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/followUpRecordService/FollowUpRecordService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/followUpRecordService/impl/FollowUpRecordServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/provinceService/ProvinceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/provinceService/impl/ProvinceServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/userService/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/userService/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/workReportService/WorkReportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/workReportService/impl/WorkReportServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/utils/BCrypt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/utils/DataResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/utils/IDUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/utils/PageBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/CrmApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/config/CorsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/cityController/CityController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/contactPersonController/ContactPersonController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/customerController/CustomerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/customerStatusController/CustomerStatusController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/districtController/DistrictController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/followUpRecordController/FollowUpRecordController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/provinceController/ProvinceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/userController/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/workReportController/WorkReportController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/City.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerAndContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/District.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordWithBLOBs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/Province.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportWithBLOBs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/cityMapper/CityMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/cityMapper/CityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/userMapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/userMapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/cityService/CityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/cityService/impl/CityServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/contactPersonService/ContactPersonService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/contactPersonService/impl/ContactPersonServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerService/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerStatusService/CustomerStatusService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerStatusService/impl/CustomerStatusServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/districtService/DistrictService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/districtService/impl/DistrictServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/followUpRecordService/FollowUpRecordService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/followUpRecordService/impl/FollowUpRecordServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/provinceService/ProvinceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/provinceService/impl/ProvinceServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/userService/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/userService/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/workReportService/WorkReportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/workReportService/impl/WorkReportServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/BCrypt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/DataResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/IDUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/PageBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/animal-sniffer-annotations-1.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/checker-qual-2.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/failureaccess-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/guava-28.1-jre.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/j2objc-annotations-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jsqlparser-2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jsr305-3.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-autoconfigure-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-starter-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-autoconfigure-1.2.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-starter-1.2.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/app.515d0334.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/customerDetail_updateCustomerDetail.809feb36.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/customerUpdate_createUpdate_updateDetail.46e5adbd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/daily_checkedDaily.f47a0bf9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/editDetail_custoerPublicAreaDetail.85c578fc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/linkmanMain_userControl.06e91c68.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/login_main_welcome.ff8fc8d0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/myClient_createClient_customerPublicArea.fb883aad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/img/logo.335af26b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/img/logoMain.c2013ca4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/app.13dc7c08.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/app.13dc7c08.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/chunk-vendors.a1e47bb2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/chunk-vendors.a1e47bb2.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail.4e1c026a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail.4e1c026a.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerUpdate_createUpdate_updateDetail.023d6538.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerUpdate_createUpdate_updateDetail.023d6538.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/daily_checkedDaily.f48b0665.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/daily_checkedDaily.f48b0665.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/editDetail_custoerPublicAreaDetail.a2a70618.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/editDetail_custoerPublicAreaDetail.a2a70618.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/linkmanMain_userControl.1bacb2c9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/linkmanMain_userControl.1bacb2c9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/login_main_welcome.e73b3f10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/login_main_welcome.e73b3f10.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/myClient_createClient_customerPublicArea.7984cb11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/myClient_createClient_customerPublicArea.7984cb11.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/liuming/crm/CrmApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/CrmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/CrmApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/customerController/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/customerController/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/followUpRecordController/FollowUpRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/followUpRecordController/FollowUpRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/userController/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/userController/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/workReportController/WorkReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/workReportController/WorkReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/CustomerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/entity/customerEntity/CustomerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/saticScheduleTask/SaticScheduleTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/customerUpdate_createUpdate_updateDetail.a249aa4f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.50db9903.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.50db9903.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.cd29c45f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.cd29c45f.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/controller/saticScheduleTask/SaticScheduleTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/customerMapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/customerMapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/userMapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/userMapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/userMapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/userMapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerService/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerService/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerStatusService/impl/CustomerStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerStatusService/impl/CustomerStatusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/followUpRecordService/FollowUpRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/followUpRecordService/FollowUpRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/followUpRecordService/impl/FollowUpRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/followUpRecordService/impl/FollowUpRecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/userService/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/userService/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/userService/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/userService/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/workReportService/WorkReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/workReportService/WorkReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/workReportService/impl/WorkReportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuming/crm/service/workReportService/impl/WorkReportServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/customerUpdate_createUpdate_updateDetail.46e5adbd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login_main_welcome.ff8fc8d0.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login_main_welcome.e4cf3424.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/app.13dc7c08.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/app.13dc7c08.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.023d6538.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/customerUpdate_createUpdate_updateDetail.023d6538.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.e73b3f10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login_main_welcome.e73b3f10.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.7984cb11.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.2a4258cb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.7984cb11.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/CrmApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/config/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/cityController/CityController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/contactPersonController/ContactPersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/customerController/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/customerStatusController/CustomerStatusController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/districtController/DistrictController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/followUpRecordController/FollowUpRecordController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/provinceController/ProvinceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/userController/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/controller/workReportController/WorkReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/cityEntity/CityExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/contactPersonEntity/ContactPersonExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerAndContactPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerEntity/CustomerExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/customerStatusEntity/CustomerStatusExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/District.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/districtEntity/DistrictExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/followUpRecordEntity/FollowUpRecordWithBLOBs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/Province.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/provinceEntity/ProvinceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/userEntity/UserExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/entity/workReportEntity/WorkReportWithBLOBs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/cityMapper/CityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/cityMapper/CityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/contactPersonMapper/ContactPersonMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerMapper/CustomerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/customerStatusMapper/CustomerStatusMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/districtMapper/DistrictMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/followUpRecordMapper/FollowUpRecordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/provinceMapper/ProvinceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/userMapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/userMapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/mapper/workReportMapper/WorkReportMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/cityService/CityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/cityService/impl/CityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/contactPersonService/ContactPersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/contactPersonService/impl/ContactPersonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerService/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerStatusService/CustomerStatusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/customerStatusService/impl/CustomerStatusServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/districtService/DistrictService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/districtService/impl/DistrictServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/followUpRecordService/FollowUpRecordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/followUpRecordService/impl/FollowUpRecordServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/provinceService/ProvinceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/provinceService/impl/ProvinceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/userService/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/userService/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/workReportService/WorkReportService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/service/workReportService/impl/WorkReportServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/BCrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/DataResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/IDUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/classes/com/liuming/crm/utils/PageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/animal-sniffer-annotations-1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/checker-qual-2.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/failureaccess-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/guava-28.1-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/j2objc-annotations-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jsqlparser-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jsr305-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-autoconfigure-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-boot-starter-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-autoconfigure-1.2.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-spring-boot-starter-1.2.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/app.515d0334.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/customerDetail_updateCustomerDetail.809feb36.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/customerUpdate_createUpdate_updateDetail.46e5adbd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/daily_checkedDaily.f47a0bf9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/editDetail_custoerPublicAreaDetail.85c578fc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/linkmanMain_userControl.06e91c68.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/login_main_welcome.ff8fc8d0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/css/myClient_createClient_customerPublicArea.fb883aad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/img/logo.335af26b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/img/logoMain.c2013ca4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/app.13dc7c08.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/app.028142e6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/app.13dc7c08.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/app.028142e6.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/chunk-vendors.a1e47bb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/chunk-vendors.a1e47bb2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail.4e1c026a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail.4e1c026a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerDetail_updateCustomerDetail~customerUpdate_createUpdate_updateDetail~daily_checkedDaily~edit~3705bdbc.041b39b0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerUpdate_createUpdate_updateDetail.023d6538.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/customerUpdate_createUpdate_updateDetail.023d6538.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/daily_checkedDaily.f48b0665.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/daily_checkedDaily.f48b0665.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/editDetail_custoerPublicAreaDetail.a2a70618.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/editDetail_custoerPublicAreaDetail.a2a70618.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/linkmanMain_userControl.1bacb2c9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/linkmanMain_userControl.1bacb2c9.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/login_main_welcome.e73b3f10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/login_main_welcome.e73b3f10.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/myClient_createClient_customerPublicArea.7984cb11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-0.0.1-SNAPSHOT/js/myClient_createClient_customerPublicArea.7984cb11.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/myClient_createClient_customerPublicArea.2a4258cb.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -572,10 +321,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp" />
-      <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp\js" />
       <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp\img" />
       <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp\css" />
+      <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp" />
+      <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\webapp\js" />
       <recent name="D:\JetBrains\IntelliJ IDEA\IdeaProjects\crm\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -637,6 +386,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaticScheduleTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuming.crm.controller.saticScheduleTask.SaticScheduleTask" />
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuming.crm.controller.saticScheduleTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CrmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="crm" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.liuming.crm.CrmApplication" />
@@ -646,6 +408,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SaticScheduleTask" />
         <item itemvalue="Application.FollowUpRecordController" />
       </list>
     </recent_temporary>
@@ -698,7 +461,9 @@
       <workItem from="1575420101032" duration="7668000" />
       <workItem from="1575445656941" duration="678000" />
       <workItem from="1575449730906" duration="2665000" />
-      <workItem from="1575506521958" duration="14032000" />
+      <workItem from="1575506521958" duration="16190000" />
+      <workItem from="1575592804626" duration="6282000" />
+      <workItem from="1575603552225" duration="15231000" />
     </task>
     <task id="LOCAL-00001" summary="工作日报接口、用户接口">
       <created>1574244245506</created>
@@ -735,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574503364072</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="上线代码">
+      <created>1575537961364</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575537961364</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,6 +516,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -753,6 +550,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="工作日报接口、用户接口" />
@@ -760,73 +562,98 @@
     <MESSAGE value="增加crm.sql文件" />
     <MESSAGE value="新增客户新增和查询接口" />
     <MESSAGE value="上线测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="上线测试代码" />
+    <MESSAGE value="上线代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="上线代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1575267534681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575267534681" />
-    <state width="1879" height="270" key="GridCell.Tab.0.bottom" timestamp="1575537573294">
+    <state x="156" y="114" key="CommitChangelistDialog2" timestamp="1575537954956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state x="156" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537954956" />
+    <state width="606" height="466" key="DebuggerActiveHint" timestamp="1575620105689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="606" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575620105689" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1575593310678">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575593310678" />
+    <state width="1879" height="270" key="GridCell.Tab.0.bottom" timestamp="1575624226505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226505" />
     <state width="1879" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.0.center" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.0.center" timestamp="1575624226505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226505" />
     <state width="1879" height="270" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.0.left" timestamp="1575537573293">
+    <state width="1879" height="270" key="GridCell.Tab.0.left" timestamp="1575624226505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573293" />
+    <state width="1879" height="270" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226505" />
     <state width="1879" height="270" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460103" />
-    <state width="1879" height="270" key="GridCell.Tab.0.right" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.0.right" timestamp="1575624226505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226505" />
     <state width="1879" height="270" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.1.bottom" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.1.bottom" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.1.center" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.1.center" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.1.left" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.1.left" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.1.right" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.1.right" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.2.bottom" timestamp="1575537573295">
+    <state width="1879" height="270" key="GridCell.Tab.2.bottom" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573295" />
+    <state width="1879" height="270" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460105" />
-    <state width="1879" height="270" key="GridCell.Tab.2.center" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.2.center" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460105" />
-    <state width="1879" height="270" key="GridCell.Tab.2.left" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.2.left" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460104" />
-    <state width="1879" height="270" key="GridCell.Tab.2.right" timestamp="1575537573294">
+    <state width="1879" height="270" key="GridCell.Tab.2.right" timestamp="1575624226306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="270" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537573294" />
+    <state width="1879" height="270" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575624226306" />
     <state width="1879" height="270" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1575444460105" />
+    <state x="440" y="96" key="SettingsEditor" timestamp="1575623167401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="96" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575623167401" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1575537967439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575537967439" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1575593310678">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575593310678" />
     <state x="702" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575265276846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -839,10 +666,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="533" y="251" width="853" height="538" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575357837680" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575528309884">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575617536862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575528309884" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575617536862" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -856,11 +683,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/liuming/crm/service/userService/impl/UserServiceImpl.java</url>
           <line>31</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liuming/crm/controller/customerController/CustomerController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liuming/crm/service/customerService/impl/CustomerServiceImpl.java</url>

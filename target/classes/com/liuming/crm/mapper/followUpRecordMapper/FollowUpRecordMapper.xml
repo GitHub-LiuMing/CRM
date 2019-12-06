@@ -471,4 +471,13 @@
     ORDER BY
         follow_up_record_update_date DESC;
   </select>
+
+  <select id="findFollowUpRecordByFollowUpDate" resultMap="ResultMapWithBLOBs">
+    SELECT DISTINCT
+        *
+    FROM
+        ( SELECT DISTINCT * FROM follow_up_record WHERE follow_up_record_status = 1 ORDER BY follow_up_record_update_date DESC ) AS c
+    GROUP BY
+        c.customer_id
+  </select>
 </mapper>
