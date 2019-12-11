@@ -47,4 +47,17 @@ public interface CustomerMapper {
     List<CustomerAndContactPerson> findCustomerByCustomerSearchContent(@Param("customerSearchContent") String customerSearchContent);
 
     int findCustomerCountByCustomerSearchContent(@Param("customerSearchContent") String customerSearchContent);
+
+    List<CustomerAndContactPerson> findCustomerByCustomerSearchContentAndCustomerStatusId(@Param(
+            "customerSearchContent") String customerSearchContent, @Param("customerStatusId") String customerStatusId);
+
+    int findCustomerCountByCustomerSearchContentAndCustomerStatusId(@Param("customerSearchContent") String customerSearchContent,
+                                                                    @Param("customerStatusId") String customerStatusId);
+
+    List<CustomerAndContactPerson> findCustomerByUserIdAndCustomerSearchContentAndCustomerStatusId(@Param("userId") String userId,
+                                                                                                   @Param("customerSearchContent") String customerSearchContent, @Param("customerStatusId") String customerStatusId);
+
+    int findCustomerCountByUserIdAndCustomerSearchContentAndCustomerStatusId(@Param("userId") String userId,
+                                                                             @Param("customerSearchContent") String customerSearchContent,
+                                                                             @Param("customerStatusId") String customerStatusId);
 }

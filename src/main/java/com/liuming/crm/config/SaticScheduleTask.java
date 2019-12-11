@@ -1,4 +1,4 @@
-package com.liuming.crm.controller.saticScheduleTask;
+package com.liuming.crm.config;
 
 import com.liuming.crm.entity.customerEntity.Customer;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs;

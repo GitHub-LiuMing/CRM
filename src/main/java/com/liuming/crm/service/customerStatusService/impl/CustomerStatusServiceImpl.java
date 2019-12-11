@@ -6,7 +6,6 @@ import com.liuming.crm.service.customerStatusService.CustomerStatusService;
 import com.liuming.crm.utils.DataResult;
 import com.liuming.crm.utils.IDUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -24,7 +23,6 @@ public class CustomerStatusServiceImpl implements CustomerStatusService {
     private CustomerStatusMapper customerStatusMapper;
 
     @Override
-    @Transactional
     public DataResult addCustomerStatus(CustomerStatus customerStatus) {
         try {
             //判断用户名是否存在,判断ID是否存在

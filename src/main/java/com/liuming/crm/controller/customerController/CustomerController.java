@@ -1,6 +1,7 @@
 package com.liuming.crm.controller.customerController;
 
 import com.liuming.crm.entity.contactPersonEntity.ContactPerson;
+import com.liuming.crm.entity.contactPersonEntity.ContactPersonCustomerSearchContent;
 import com.liuming.crm.entity.customerEntity.Customer;
 import com.liuming.crm.service.customerService.CustomerService;
 import com.liuming.crm.utils.DataResult;
@@ -32,7 +33,7 @@ public class CustomerController {
      * @Date 2019.11.22 10:49
      */
     @RequestMapping("/addCustomer")
-    public DataResult addCustomer(Customer customer, ContactPerson contactPerson) {
+    public DataResult addCustomer(Customer customer, ContactPersonCustomerSearchContent contactPerson) {
         if (StringUtils.isNotBlank(customer.getCustomerName())
                 && StringUtils.isNotBlank(customer.getCustomerStatusId())
                 && StringUtils.isNotBlank(customer.getCustomerStatusName())
@@ -61,9 +62,10 @@ public class CustomerController {
     @RequestMapping("/findCustomerByUserId")
     public DataResult findCustomerByUserId(@RequestParam(defaultValue = "1") int pageNum,
                                    @RequestParam(defaultValue = "10") int pageSize,
-                                   String userId, String customerSearchContent) {
+                                   String userId, String customerSearchContent, String customerStatusId) {
         if (StringUtils.isNotBlank(userId)) {
-            return customerService.findCustomerByUserId(pageNum, pageSize, userId, customerSearchContent);
+            return customerService.findCustomerByUserId(pageNum, pageSize, userId, customerSearchContent,
+                    customerStatusId);
         } else {
             return DataResult.build(500, "用户ID不得为空");
         }

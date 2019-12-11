@@ -5,7 +5,6 @@ import com.liuming.crm.mapper.districtMapper.DistrictMapper;
 import com.liuming.crm.service.districtService.DistrictService;
 import com.liuming.crm.utils.DataResult;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,6 +1,7 @@
 package com.liuming.crm.mapper.contactPersonMapper;
 
 import com.liuming.crm.entity.contactPersonEntity.ContactPerson;
+import com.liuming.crm.entity.contactPersonEntity.ContactPersonCustomerSearchContent;
 import com.liuming.crm.entity.contactPersonEntity.ContactPersonExample;
 import java.util.List;
 
@@ -31,7 +32,13 @@ public interface ContactPersonMapper {
 
     int updateByPrimaryKey(ContactPerson record);
 
-    ContactPerson findContactPersonByPhoneOrWechatOrWangwang(ContactPerson contactPerson);
+    List<ContactPerson> findContactPersonByPhoneOrWechatOrWangwang(@Param("customerSearchContent") String customerSearchContent);
 
     List<ContactPerson> findContactPersonByCustomerId(@Param("customerId") String customerId);
+
+    List<ContactPerson> findContactPersonByPhone(@Param("customerSearchContent") String customerSearchContent);
+
+    List<ContactPerson> findContactPersonByWechat(@Param("customerSearchContent") String customerSearchContent);
+
+    List<ContactPerson> findContactPersonByWangwang(@Param("customerSearchContent") String customerSearchContent);
 }

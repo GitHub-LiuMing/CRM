@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@EnableTransactionManagement
+//@EnableTransactionManagement
 public class CrmApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(CrmApplication.class, args);

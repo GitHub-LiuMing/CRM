@@ -276,23 +276,18 @@
     where contact_person_id = #{contactPersonId,jdbcType=VARCHAR}
   </update>
 
-  <select id="findContactPersonByPhoneOrWechatOrWangwang" parameterType="com.liuming.crm.entity.contactPersonEntity.ContactPerson"
+  <select id="findContactPersonByPhoneOrWechatOrWangwang"
+          parameterType="java.lang.String"
           resultMap="Map">
     SELECT
     *
     FROM
     contact_person
     WHERE
-    <if test="contactPersonPhone != null" >
-      contact_person_phone = #{contactPersonPhone,jdbcType=VARCHAR} AND
+    <if test="customerSearchContent != null and customerSearchContent != ''">
+      CONCAT_WS( IFNULL(contact_person_phone, ''), IFNULL(contact_person_wechat, ''), IFNULL(contact_person_wangwang, '') )
+      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
     </if>
-    <if test="contactPersonWechat != null" >
-      contact_person_wechat = #{contactPersonWechat,jdbcType=VARCHAR} AND
-    </if>
-    <if test="contactPersonWangwang != null" >
-      contact_person_wangwang = #{contactPersonWangwang,jdbcType=VARCHAR} AND
-    </if>
-    1 = 1
   </select>
 
   <select id="findContactPersonByCustomerId" parameterType="java.lang.String" resultMap="Map">
@@ -304,5 +299,38 @@
         customer_id = #{customerId}
     ORDER BY
 	    contact_person_updated_date DESC
+  </select>
+
+  <select id="findContactPersonByPhone"
+          parameterType="java.lang.String"
+          resultMap="Map">
+    SELECT
+        *
+    FROM
+        contact_person
+    WHERE
+        contact_person_phone = #{customerSearchContent}
+  </select>
+
+  <select id="findContactPersonByWechat"
+          parameterType="java.lang.String"
+          resultMap="Map">
+    SELECT
+        *
+    FROM
+        contact_person
+    WHERE
+        contact_person_wechat = #{customerSearchContent}
+  </select>
+
+  <select id="findContactPersonByWangwang"
+          parameterType="java.lang.String"
+          resultMap="Map">
+    SELECT
+        *
+    FROM
+        contact_person
+    WHERE
+        contact_person_wangwang = #{customerSearchContent}
   </select>
 </mapper>

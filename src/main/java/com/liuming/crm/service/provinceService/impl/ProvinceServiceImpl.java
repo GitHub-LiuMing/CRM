@@ -4,7 +4,6 @@ import com.liuming.crm.entity.provinceEntity.Province;
 import com.liuming.crm.mapper.provinceMapper.ProvinceMapper;
 import com.liuming.crm.service.provinceService.ProvinceService;
 import com.liuming.crm.utils.DataResult;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

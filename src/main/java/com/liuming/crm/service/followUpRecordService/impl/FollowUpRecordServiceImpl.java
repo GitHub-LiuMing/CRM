@@ -1,6 +1,5 @@
 package com.liuming.crm.service.followUpRecordService.impl;
 
-import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecord;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs;
 import com.liuming.crm.entity.userEntity.User;
 import com.liuming.crm.mapper.followUpRecordMapper.FollowUpRecordMapper;
