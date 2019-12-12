@@ -436,8 +436,9 @@
         AND cu.customer_public_area_status = 1
         AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
 	    cu.customer_id
@@ -458,8 +459,9 @@
     AND cu.customer_public_area_status = 1
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
     cu.customer_updated_date DESC
@@ -543,8 +545,9 @@
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
 	    cu.customer_id
@@ -563,8 +566,9 @@
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
 	    cu.customer_updated_date DESC
@@ -589,8 +593,9 @@
     AND cu.customer_public_area_status = 1
     AND cu.customer_status_id = #{customerStatusId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
     cu.customer_id
@@ -610,8 +615,9 @@
     AND cu.customer_public_area_status = 1
     AND cu.customer_status_id = #{customerStatusId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
     cu.customer_updated_date DESC
@@ -638,8 +644,9 @@
     AND cu.customer_status_id = #{customerStatusId}
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
     cu.customer_id
@@ -661,8 +668,9 @@
     AND cu.customer_status_id = #{customerStatusId}
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT_WS( cu.customer_name, cp.contact_person_phone, cp.contact_person_wechat, cp.contact_person_wangwang )
-      LIKE CONCAT_WS ( '%', #{customerSearchContent}, '%' )
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      IFNULL(cp.contact_person_wangwang,'') )
+      LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
     cu.customer_updated_date DESC
