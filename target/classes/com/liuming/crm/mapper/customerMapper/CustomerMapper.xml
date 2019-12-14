@@ -436,7 +436,7 @@
         AND cu.customer_public_area_status = 1
         AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
@@ -459,7 +459,7 @@
     AND cu.customer_public_area_status = 1
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
@@ -545,14 +545,14 @@
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
 	    cu.customer_id
     ORDER BY
-	    cu.customer_updated_date DESC
+	    cu.customer_updated_date ASC
   </select>
 
   <select id="findCustomerCountByCustomerSearchContent" resultType="java.lang.Integer">
@@ -566,12 +566,12 @@
         cp.customer_id = cu.customer_id
         AND cu.customer_public_area_status = 1
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
-	    cu.customer_updated_date DESC
+	    cu.customer_updated_date ASC
   </select>
 
   <select id="findCustomerByCustomerSearchContentAndCustomerStatusId" resultMap="CMap">
@@ -593,14 +593,14 @@
     AND cu.customer_public_area_status = 1
     AND cu.customer_status_id = #{customerStatusId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
     cu.customer_id
     ORDER BY
-    cu.customer_updated_date DESC
+    cu.customer_updated_date ASC
   </select>
 
   <select id="findCustomerCountByCustomerSearchContentAndCustomerStatusId" resultType="java.lang.Integer">
@@ -615,12 +615,12 @@
     AND cu.customer_public_area_status = 1
     AND cu.customer_status_id = #{customerStatusId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
-    cu.customer_updated_date DESC
+    cu.customer_updated_date ASC
   </select>
 
   <select id="findCustomerByUserIdAndCustomerSearchContentAndCustomerStatusId" parameterType="java.lang.String"
@@ -644,14 +644,14 @@
     AND cu.customer_status_id = #{customerStatusId}
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     GROUP BY
     cu.customer_id
     ORDER BY
-    cu.customer_updated_date DESC
+    cu.customer_updated_date ASC
   </select>
 
   <select id="findCustomerCountByUserIdAndCustomerSearchContentAndCustomerStatusId" parameterType="java.lang.String"
@@ -668,11 +668,12 @@
     AND cu.customer_status_id = #{customerStatusId}
     AND user_id = #{userId}
     <if test="customerSearchContent != null and customerSearchContent != ''">
-      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
+      AND CONCAT( IFNULL(cu.customer_name,''), IFNULL( cp.contact_person_name, '' ),
+      IFNULL(cp.contact_person_phone,''), IFNULL(cp.contact_person_wechat,''),
       IFNULL(cp.contact_person_wangwang,'') )
       LIKE CONCAT ( '%', #{customerSearchContent}, '%' )
     </if>
     ORDER BY
-    cu.customer_updated_date DESC
+    cu.customer_updated_date ASC
   </select>
 </mapper>

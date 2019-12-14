@@ -1,7 +1,9 @@
 package com.liuming.crm.service.followUpRecordService.impl;
 
+import com.liuming.crm.entity.customerEntity.Customer;
 import com.liuming.crm.entity.followUpRecordEntity.FollowUpRecordWithBLOBs;
 import com.liuming.crm.entity.userEntity.User;
+import com.liuming.crm.mapper.customerMapper.CustomerMapper;
 import com.liuming.crm.mapper.followUpRecordMapper.FollowUpRecordMapper;
 import com.liuming.crm.mapper.userMapper.UserMapper;
 import com.liuming.crm.service.followUpRecordService.FollowUpRecordService;
@@ -10,6 +12,7 @@ import com.liuming.crm.utils.IDUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -28,6 +31,9 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
     @Resource
     private UserMapper userMapper;
 
+    @Resource
+    private CustomerMapper customerMapper;
+
     @Override
     public DataResult addFollowUpRecord(FollowUpRecordWithBLOBs followUpRecordWithBLOBs) {
         followUpRecordWithBLOBs.setFollowUpRecordId(IDUtils.getID());
@@ -35,7 +41,22 @@ public class FollowUpRecordServiceImpl implements FollowUpRecordService {
         followUpRecordWithBLOBs.setFollowUpRecordUpdateDate(new Date());
         int i = followUpRecordMapper.insertSelective(followUpRecordWithBLOBs);
         if (i > 0) {
-            return DataResult.build(200,"跟进记录添加成功");
+            Customer customer = new Customer();
+            customer.setCustomerId(followUpRecordWithBLOBs.getCustomerId());
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String format = simpleDateFormat.format(new Date());
+            try {
+                Date date = simpleDateFormat.parse(format);
+                customer.setLastFollowUpDate(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            customer.setCustomerUpdatedDate(new Date());
+            int i1 = customerMapper.updateByPrimaryKeySelective(customer);
+            if (i1 > 0){
+                return DataResult.build(200,"跟进记录添加成功");
+            }
+            return DataResult.build(500,"客户更新时间更新失败，请联系管理员手动修改");
         } else {
             return DataResult.build(500,"跟进记录添加失败");
         }
