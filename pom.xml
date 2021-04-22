@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.3</version>
+            <version>3.5.6</version>
         </dependency>
 
         <!-- 引入Mybatis嵌入Spring的依赖：解决项目启动扫描不到文件的问题 -->
